@@ -32,6 +32,12 @@
   font-weight: normal;
   src: url('./asset/Font/KozGoPr6N/KozGoPro-Regular.otf') format('truetype');
 }
+@font-face {
+  font-family: 'UTM-Bebas';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./asset/Font/KozGoPr6N/KozGoPro-Regular.otf') format('truetype');
+}
 
 body, html {
   font-family: Montserrat-Medium;

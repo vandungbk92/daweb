@@ -1,0 +1,107 @@
+.footer-container {
+  .section-top {
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+
+    .logo-bmv {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .company-name-vi {
+      position: absolute;
+      top: 164px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      font-family: UTM-Bebas, sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.48px;
+      opacity: 1;
+    }
+
+    .company-name-en {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      font-family: UTM-Bebas, sans-serif;
+      font-size: 15px;
+      letter-spacing: 0;
+      opacity: 0.7;
+    }
+
+    .contact-container {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+
+
+      .contact__item {
+        width: calc(100% / 3);
+        float: left;
+
+        .contact__icon {
+          margin-bottom: 10px;
+        }
+
+        .contact__text {
+          font-size: 15px;
+          font-family: Montserrat-Regular, serif;
+        }
+      }
+    }
+
+    .language {
+      position: absolute;
+      top: 375px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .language__title {
+        font-family: Montserrat-Bold, sans-serif;
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .language__item {
+        display: flex;
+
+        .language__flag {
+          float: left;
+          margin-right: 10px;
+
+          &:first-child {
+            margin-left: auto;
+          }
+
+          &:last-child {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background: #CE001B 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 40px;
+    width: 100%;
+
+    .copyright__content {
+      font-family: Montserrat-Regular, serif;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      opacity: 0.7;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}
