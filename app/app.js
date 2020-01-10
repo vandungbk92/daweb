@@ -34,6 +34,9 @@ import { translationMessages } from './i18n';
 
 import './styles.css';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 const openSansObserver = new FontFaceObserver('Montserrat-Medium', {});

@@ -15,6 +15,7 @@ import {
 
 import TinTuc from './TinTuc';
 import NoiDungChinh from './NoiDungChinh';
+import HomeSlider from './HomeSlider';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -42,6 +43,7 @@ export function HomePage({
 
   return (
     <div>
+      <HomeSlider />
       <NoiDungChinh />
       <TinTuc />
     </div>
