@@ -2,7 +2,7 @@ import React from 'react';
 import hinh_vuong from '../../asset/Image/hinh_vuong.jpg';
 import hinh_nha_1 from '../../asset/Image/hinh_nha_1.png';
 import nha_kinh from '../../asset/Image/nha_kinh.jpg';
-import nha_kinh_2 from '../../asset/Image/nha_kinh_2.png';
+import nha_kinh_2 from '../../asset/Image/nha_kinh_2.jpg';
 import logo_blue from '../../asset/Icon/Logo_blue.svg';
 import ic_mail from '../../asset/Icon/ic_mail.svg';
 import ic_location from '../../asset/Icon/ic_location.svg';
