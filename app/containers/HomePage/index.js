@@ -26,13 +26,13 @@ import './HomePage.css';
 const key = 'home';
 
 export function HomePage({
-  username,
-  loading,
-  error,
-  repos,
-  onSubmitForm,
-  onChangeUsername,
-}) {
+                           username,
+                           loading,
+                           error,
+                           repos,
+                           onSubmitForm,
+                           onChangeUsername,
+                         }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
@@ -42,10 +42,10 @@ export function HomePage({
   }, []);
 
   return (
-    <div>
-      <HomeSlider />
-      <NoiDungChinh />
-      <TinTuc />
+    <div className='homepage-container'>
+      <HomeSlider/>
+      <NoiDungChinh/>
+      <TinTuc/>
     </div>
   );
 }

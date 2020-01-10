@@ -33,6 +33,7 @@ import configureStore from './configureStore';
 import { translationMessages } from './i18n';
 
 import './styles.css';
+import './styles/Styles.scss';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
