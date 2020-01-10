@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./asset/Font/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./asset/Font/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+body, html{
+  font-family: Montserrat-Medium;
+  height: 100%;
+}
+
+
+
