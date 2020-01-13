@@ -3,7 +3,7 @@ import CenteredSection from './CenteredSection';
 
 export function TinTuc() {
   return (
-    <div style={{ width: '70%', margin: 'auto' }}>
+    <div style={{ width: '1171px', margin: 'auto' }}>
       <div style={{ textAlign: 'center', margin: '30px' }}>
         <span
           style={{
@@ -19,39 +19,46 @@ export function TinTuc() {
 
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <tr className="tr-css bg-tr">
-          <td className="font-time-1">Thursday, 14:09 Date 14/12/2017</td>
-          <td className="font-content-1">
-            Gặp gỡ với Giám ĐốcGặp gỡ với Giám ĐốcGặp gỡ với Giám Đốc điều hành
-            của THE GENERAL DEPT. OF INT'L COOPERATION
+          <td className="font-time-1">
+            <div className="font-time-left">Thursday, 14:09 Date 14/12/2017</div>
           </td>
-          <td style={{ width: '12%' }}>
+          <td className="font-content-1">
+            Gặp gỡ với Giám Đốc điều hành của THE GENERAL <br />DEPT. OF INT'L COOPERATION
+          </td>
+          <td className="btn-continous">
             <span className="btn-read-more">ĐỌC TIẾP</span>
           </td>
         </tr>
         <tr className="tr-css">
-          <td className="font-time-2">Thursday, 14:09 Date 14/12/2017</td>
+          <td className="font-time-2">
+            <div className="font-time-left">Thursday, 14:09 Date 14/12/2017</div>
+          </td>
           <td className="font-content-2">
             Các công ty quản lý tòa nhà buộc phải cải thiện
           </td>
-          <td style={{ width: '12%' }}>
+          <td className="btn-continous">
             <span className="btn-read-more">ĐỌC TIẾP</span>
           </td>
         </tr>
         <tr className="tr-css">
-          <td className="font-time-2">Thursday, 14:09 Date 14/12/2017</td>
+          <td className="font-time-2">
+            <div className="font-time-left">Thursday, 14:09 Date 14/12/2017</div>
+          </td>
           <td className="font-content-2">
             THAM QUAN VÀ LÀM VIỆC TẠI DOANH NGHIỆP NHẬT BẢN
           </td>
-          <td style={{ width: '12%' }}>
+          <td className="btn-continous">
             <span className="btn-read-more">ĐỌC TIẾP</span>
           </td>
         </tr>
         <tr className="tr-css">
-          <td className="font-time-2">Thursday, 14:09 Date 14/12/2017</td>
+          <td className="font-time-2">
+            <div className="font-time-left">Thursday, 14:09 Date 14/12/2017</div>
+          </td>
           <td className="font-content-2">
             GẶP GỠ VỚI CÔNG TY AN NINH VIỆT NAM
           </td>
-          <td style={{ width: '12%' }}>
+          <td className="btn-continous">
             <span className="btn-read-more">ĐỌC TIẾP</span>
           </td>
         </tr>
