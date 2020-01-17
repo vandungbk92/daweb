@@ -1,8 +1,19 @@
-.clearfix:before, .clearfix:after {
-  display: table;
-  content: " ";
-}
+@import "font-face.css";
+@import '_variables.scss';
+@import '_mixin.scss';
 
-.clearfix:after {
-  clear: both;
-}
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import 'Header.scss';
+@import 'HomePage.scss';
+@import 'Footer.scss';
+@import "HomeSlider";
+
+@import "styles.scss";
+
+@import '_responsive.scss';
+

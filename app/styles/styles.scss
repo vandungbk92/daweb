@@ -1,0 +1,37 @@
+body, html {
+  font-family: Montserrat-Medium;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.custom-page-slider{
+  width: 100%;
+}
+
+.slick-dots{
+  z-index: 9999999999999;
+}
+
+.slick-dots li{
+  width: 19%;
+  height: auto;
+  opacity: 1;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.menu-header-top{
+  height: 110px;
+  z-index: 2;
+}
+
+// style homepages.
