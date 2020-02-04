@@ -51,6 +51,24 @@ function Header() {
     }
   }
 
+  function checkClickInsideMenu(evt) {
+    let jsIconMenu = document.getElementById('js-icon-menu');
+    let jsMenuList = document.getElementById('js-menu-list');
+    let targetElement = evt.target; // clicked element
+    let checkInside = false;
+
+    do {
+      if (targetElement === jsMenuList || targetElement === jsIconMenu) checkInside = true;
+      targetElement = targetElement.parentNode;
+    } while (targetElement);
+
+    if (!checkInside) {
+      document.body.style.overflow = 'unset';
+      jsMenuList.style.width = '0px';
+      document.getElementById('js-menu-mobile').classList.remove('show');
+    }
+  }
+
   function checkClickInsideButtonLanguage(evt) {
     const elementCheckInside1 = document.getElementById('js-language-container');
     let jsLanguage = document.getElementById('js-language__list');
@@ -74,9 +92,11 @@ function Header() {
 
   React.useEffect(() => {
     document.addEventListener('click', (e) => checkClickInsideButtonLanguage(e));
+    document.addEventListener('click', (e) => checkClickInsideMenu(e));
 
     return () => {
       document.removeEventListener('click', (e) => checkClickInsideButtonLanguage(e));
+      document.removeEventListener('click', (e) => checkClickInsideMenu(e));
     };
   }, []);
 
@@ -139,7 +159,7 @@ function Header() {
 
       <div className="header-mobile">
         <div className="header-content">
-          <img src={MENU_BUTTON} onClick={() => openNav()} className='icon-menu' alt=''/>
+          <img src={MENU_BUTTON} onClick={() => openNav()} id='js-icon-menu'  className='icon-menu' alt=''/>
           <img src={Group_113} className='icon-logo' alt=''/>
           <div id='js-language-container' className='language-container'>
             <div className='language' onClick={() => toggleMenuLanguage()}>
