@@ -1,6 +1,6 @@
 .noi-dung-home-page {
   .img-home-1{
-    //width: 41.5%;
+    width: 41.5%;
     box-shadow: 5px 7px 30px #00000080;
     //margin: 30px 0 0 15px;
   }
@@ -18,7 +18,6 @@
     .product__background--dot {
       width: 17.6%;
       position: absolute;
-      height: 340px;
       top: 200px;
       left: 0;
     }
@@ -46,7 +45,7 @@
 
           .title__text {
             font-family: KozGoPro-Regular, sans-serif;
-            letter-spacing: 11px;
+            letter-spacing: 7.7px;
             font-size: 35px;
             position: absolute;
             top: 0;
@@ -59,7 +58,7 @@
             position: absolute;
             top: 20px;
             left: 0;
-            width: 404px;
+            width: 430px;
             height: 36px;
             background-color: #221F64;
           }
@@ -71,17 +70,20 @@
         }
 
         .content {
-          margin-top: 30px;
+          margin-top: 20px;
           width: 593px;
-          height: 95px;
+          height: 123px;
           font-size: 16px;
           letter-spacing: 0;
           overflow: hidden;
         }
 
         .btn-more {
+          &:hover{
+            background-color: #CE001B;
+          }
           font-size: 16px;
-          margin-top: 65px;
+          margin-top: 40px;
           background: #1D86E2 0% 0% no-repeat padding-box;
           padding: 7px 32px;
           border: 0;
@@ -95,9 +97,8 @@
 
     .product__content {
       z-index: 1;
-      margin-top: 4%;
       position: relative;
-      height: 710px;
+      height: 707px;
       overflow: hidden;
 
       .image__right {
@@ -157,6 +158,7 @@
               font-size: 16px;
               float: left;
               margin: auto auto auto 10px;
+              font-family: Montserrat-SemiBold;
             }
           }
 
@@ -210,6 +212,24 @@
           width: calc(100% / 4);
           float: left;
           height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1365px) {
+  .homepage-container{
+    .home-slider{
+      .sl-content{
+
+        .sl-content-header{
+          width: 216px;
+          font-size: 42px;
+        }
+        .sl-content-content{
+          width: 342px;
+          font-size: 11px;
         }
       }
     }

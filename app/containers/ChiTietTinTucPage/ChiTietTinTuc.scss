@@ -1,0 +1,85 @@
+.chi-tiet-tin-tuc-page {
+
+  .author {
+    letter-spacing: 0;
+    color: #777777;
+    opacity: 1;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    .breadcrumb-dot {
+      width: 6px;
+      height: 6px;
+      background: #CE001B;
+      border-radius: 6px;
+    }
+  }
+
+  .block-1 {
+    width: 73%;
+    .title{
+      letter-spacing: 0;
+      color: #222222;
+      text-transform: uppercase;
+      opacity: 1;
+      font-family: Montserrat-Bold;
+      font-size: 28px;
+    }
+    .description{
+      letter-spacing: 0;
+      color: #333333;
+      opacity: 1;
+      font-family: Montserrat-Bold;
+      font-size: 16px;
+    }
+    .content{
+      text-align: left;
+      letter-spacing: 0;
+      opacity: 1;
+      color: #333333;
+    }
+    .quote{
+      letter-spacing: 0;
+      color: #0781FB;
+      cursor: pointer;
+      font-family: Montserrat-MediumItalic;
+    }
+  }
+  .block-2 {
+    width: 24.26666666666%;
+    .detail {
+      width: 100%;
+      .img-detail {
+        width: 100%;
+      }
+    }
+
+    .title {
+      letter-spacing: 0;
+      color: #222222;
+      text-transform: uppercase;
+      opacity: 1;
+      font-size: 16px;
+      font-family: Montserrat-Bold;
+      cursor: pointer;
+      &:hover{
+        color: #CE001B;
+      }
+    }
+
+    .content{
+      letter-spacing: 0;
+      color: #333333;
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    .author{
+      font-size: 14px;
+    }
+  }
+
+
+}

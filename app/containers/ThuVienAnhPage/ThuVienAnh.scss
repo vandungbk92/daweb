@@ -1,0 +1,42 @@
+.thu-vien-anh-page {
+  .thu-vien-anh-content{
+    margin-bottom: 80px;
+    .block-1{
+      display: flex;
+      justify-content: space-between;
+      >img{
+        width: 557px;
+      }
+      .bl-1-r{
+        >img{
+          margin-bottom: 11px;
+        }
+        width: 557px;
+        .bl-1-img-2{
+          width: 557px;
+        }
+        .bl-1-img-3{
+          width: 273px;
+        }
+        .bl-1-img-4{
+          width: 273px;
+        }
+        .bl-1-r-1{
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .block-2{
+      display: flex;
+      justify-content: space-between;
+      margin: 11px 0 11px 0;
+      .bl-2-l{
+        width: 841px;
+      }
+      .bl-2-r{
+        width: 273px;
+      }
+    }
+  }
+}
+

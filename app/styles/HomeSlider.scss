@@ -5,4 +5,10 @@
   position: relative;
 }
 
+@media (max-width: 1365px) {
+  .home-slider{
+    margin: 0 !important;
+  }
+}
+
 //style={{ width: '100%', marginBottom: '300px', position: 'relative', zIndex: '1', marginTop: '-110px' }}

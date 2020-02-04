@@ -1,0 +1,51 @@
+.vscn-chi-tiet{
+  .vscn-11{
+    width: 49.06%;
+  }
+  .vscn-content{
+    width: 50.93%;
+    display: table-cell;
+    background: #CE001B;
+    position: relative;
+
+    .vscn-title{
+      background: #221F64;
+      position: absolute;
+      width: 100%;
+      top: 15%;
+
+      text-align: left;
+      font-family: Montserrat-Bold;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      opacity: 1;
+      font-size: 28px;
+    }
+    .vscn-title-left{
+      position: absolute;
+      width: 20px;
+      background: #221F64;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+    }
+    .vscn-detail{
+      position: absolute;
+      width: 100%;
+      top: 25%;
+      font-size: 14px;
+      text-align: left;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      opacity: 1;
+      z-index: 2;
+    }
+    .img-clear{
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      z-index: 1;
+    }
+  }
+}

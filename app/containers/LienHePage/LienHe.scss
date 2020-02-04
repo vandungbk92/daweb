@@ -1,0 +1,86 @@
+.lien-he-page {
+  .slide-top{
+    width: 100%;
+    margin-top: -110px;
+    z-index: 1;
+    position: relative;
+    .bg-slide{
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      background: #000000;
+      opacity: 0.45;
+    }
+    img{
+      width: 100%;
+    }
+
+    .slide-content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1125px;
+      margin: auto;
+      right: 0;
+      bottom: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .lh-slide-title {
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        font: {
+          family: Montserrat-ExtraBold;
+          size: 42px;
+        }
+      }
+
+      .lh-slide-content {
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-align: center;
+        width: 954px;
+        font: {
+          family: Montserrat-Light;
+          size: 16px;
+        }
+      }
+    }
+  }
+
+  .block-1{
+    width: 770px;
+    margin: 80px auto;
+    .input-row{
+      width: 380px;
+    }
+    .btn-lien-he{
+      width: 180px;
+      height: 50px;
+      background: #1D86E2;
+      opacity: 1;
+      outline: none;
+      border-style: none;
+
+      font-family: Montserrat-Bold;
+      letter-spacing: 1.6px;
+      color: #FFFFFF;
+      font-size: 16px;
+    }
+    .textarea-bmv{
+      height: 240px;
+      padding-top: 15px;
+    }
+  }
+
+
+}
+
+
+

@@ -21,222 +21,8 @@
 
 }
 
-@media (max-width: 1920px) {
-  .container {
-    max-width: 1570px;
-  }
-}
 
 @media (min-width: 1367px) {
-  .menu-header-top {
-    height: 124px !important;
-  }
-  .home-slider {
-    margin-top: -125px;
-  }
-
-  /*.homepage-container {
-    .product-container {
-      position: relative;
-
-      .product__background--red {
-        background-color: #CE001B;
-        height: 515px;
-        width: 100%;
-      }
-
-      .product__background--dot {
-        position: absolute;
-        height: 476px;
-        top: 340px;
-        left: 0;
-      }
-
-      .product__info {
-        position: absolute;
-        top: 100px;
-        width: 100%;
-        z-index: 2;
-
-        img {
-          margin-left: 50px;
-          width: 795px;
-          box-shadow: 5px 7px 30px #00000080;
-        }
-
-        .product__info__content {
-          width: 50%;
-          float: right;
-          color: #FFFFFF;
-
-          .title--jp {
-            position: relative;
-            height: 70px;
-
-            .title__text {
-              font-family: KozGoPro-Regular, sans-serif;
-              letter-spacing: 11px;
-              font-size: 45px;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: 2;
-            }
-
-            .title__background {
-              z-index: 1;
-              position: absolute;
-              top: 20px;
-              left: 0;
-              width: 567px;
-              height: 50px;
-              background-color: #221F64;
-            }
-          }
-
-          .title--vi {
-            font-family: Montserrat-Bold, sans-serif;
-            margin-top: 20px;
-            font-size: 33px;
-          }
-
-          .content {
-            margin-top: 35px;
-            width: 828px;
-            font-size: 18px;
-          }
-
-          .btn-more {
-            font-size: 16px;
-            margin-top: 65px;
-            background: #1D86E2 0% 0% no-repeat padding-box;
-            padding: 15px 40px;
-            border: 0;
-            font-family: Montserrat-Bold, sans-serif;
-            letter-spacing: 1.6px;
-            color: #FFFFFF;
-          }
-        }
-
-      }
-
-      .product__content {
-        z-index: 1;
-        margin-top: 15px;
-        position: relative;
-        height: 1046px;
-        overflow: hidden;
-
-        .image__right {
-          position: absolute;
-          right: 0;
-          top: 0;
-          height: 1046px;
-          z-index: 2;
-        }
-
-        .image__bottom {
-          z-index: 1;
-          position: absolute;
-          width: 1920px;
-          left: 0;
-          bottom: 0;
-        }
-
-        .product__legend {
-          z-index: 2;
-          position: absolute;
-          top: 275px;
-          left: 370px;
-          background: #221F64 0 0 no-repeat padding-box;
-          padding: 5px 10px;
-
-
-          span {
-            font-size: 32px;
-            font-family: Montserrat-Bold, sans-serif;
-            color: #FFFFFF;
-            text-transform: uppercase;
-          }
-        }
-
-        .product__detail {
-          width: 1000px;
-          z-index: 3;
-          position: absolute;
-          top: 390px;
-          left: 300px;
-
-          .product__item {
-            width: 50%;
-            float: left;
-            padding: 30px 50px;
-
-            .title {
-              display: flex;
-
-              .title__image {
-                float: left;
-              }
-
-              .title__text {
-                color: #222222;
-                font-size: 24px;
-                float: left;
-                margin: auto auto auto 10px;
-              }
-            }
-
-            .content {
-              padding: 20px 15px 0;
-              color: #555555;
-              font-size: 16px;
-            }
-          }
-        }
-      }
-
-      .product__bottom {
-        width: 100%;
-        background: #CE001B 0 0 no-repeat padding-box;
-        height: 250px;
-        display: flex;
-
-        .product__bottom__content {
-          margin: auto;
-          //background-color: #1D86E2;
-          height: 120px;
-          width: 1200px;
-          color: #FFFFFF;
-
-          .content__item {
-            width: calc(100% / 3);
-            height: 100%;
-            float: left;
-            border-right: 1px solid rgba(255, 255, 255, 0.5
-            );
-            text-align: center;
-
-            &:last-child {
-              border: 0;
-            }
-
-            .content__item__number {
-              font-family: Montserrat-Bold, sans-serif;
-              font-size: 68px;
-              line-height: 50px;
-              margin-bottom: 16px;
-            }
-
-            .content__item__text {
-              font-family: Montserrat-Medium, sans-serif;
-              font-size: 18px;
-            }
-          }
-        }
-      }
-    }
-  }*/
 
 }
 
@@ -249,5 +35,398 @@
 @media (max-width: 1366px) {
   .container {
     max-width: 1125px;
+  }
+}
+
+@media (min-width: 1919px) {
+
+  .container-custom{
+    width: 1570px !important;
+    margin: auto;
+  }
+
+  .menu-header-top {
+    height: 124px !important;
+  }
+  .home-slider {
+    margin-top: -125px;
+  }
+  .menu-header {
+    font-size: 20px;
+  }
+
+  .homepage-container {
+    .product-container {
+      .product__background--red {
+        height: 515px;
+      }
+
+      .product__background--dot{
+        top: 280px;
+      }
+
+      .product__info{
+        img{
+          margin-left: 50px;
+        }
+
+        .product__info__content{
+          .title--jp{
+            height: 80px;
+
+            .title__text{
+              letter-spacing: 11px;
+              font-size: 50px;
+            }
+            .title__background{
+              width: 610px;
+              height: 50px;
+            }
+          }
+          .title--vi{
+            font-size: 33px;
+          }
+          .content{
+            font-size: 18px;
+            height: 190px;
+          }
+          .btn-more{
+            margin-top: 70px;
+          }
+        }
+      }
+
+      .product__content{
+        height: 1046px;
+        .product__legend{
+          top: 280px;
+          left: 375px;
+        }
+
+        .product__detail{
+          top: 500px;
+          left: 320px;
+          .product__item{
+            .title{
+              .title__image{
+                width: 79px;
+              }
+              .title__text{
+                font-size: 24px;
+              }
+            }
+            .content{
+              //width: 371px;
+            }
+          }
+        }
+      }
+
+      .product__bottom{
+        height: 249px;
+        .product__bottom__content{
+          width: 100%;
+          .content__item{
+            .content__item__number{
+              font-size: 68px;
+            }
+            .content__item__text{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .dich-vu-page {
+    .slide-dich-vu {
+      margin: -120px 0 125px 0 !important;
+      .dich-vu-page {
+        left: 19.894% !important;
+        width: 859px;
+
+        .dv-slide-title {
+          font-size: 56px !important;
+        }
+        .dv-slide-content{
+          width: 859px;
+        }
+      }
+    }
+
+    .dich-vu-chi-tiet{
+      .block-1{
+        .img-leo-treo {
+          width: 548px !important;
+          left: 19.894% !important;
+        }
+        .hinh-vuong {
+          width: 548px !important;
+          left: 20.694% !important;
+          top: 15px !important;
+        }
+        .title-1 {
+          left: 46.8% !important;
+          top: 26% !important;
+          font-size: 24px !important;
+          padding: 3px 12px !important;
+        }
+
+        .img-opacity-clear-1 {
+          top: 14% !important;
+          width: 80px !important;
+          right: 31.25% !important;
+        }
+
+        .title-2 {
+          width: 570px !important;
+          left: 50.5% !important;
+          top: 41% !important;
+          padding: 5px 15px !important;
+        }
+
+        .title-3 {
+          font-size: 16px !important;
+          left: 71% !important;
+          top: 66% !important;
+        }
+
+        .img-opacity-clear {
+          width: 403px !important;
+          right: 8% !important;
+          top: -20px;
+        }
+
+        .img-bao-ve {
+          width: 74px !important;
+          right: 28.9% !important;
+          top: 12% !important;
+        }
+
+        .img-bao-ve-1 {
+          width: 340px !important;
+          height: 100% !important;
+          top: 0 !important;
+          right: 8% !important;
+        }
+
+        .bao-ve-title-2 {
+          top: 45% !important;
+        }
+
+        .bao-ve-title-3 {
+          top: 75% !important;
+        }
+
+      }
+
+      .block-2{
+        .img-van-hanh {
+          width: 403px !important;
+        }
+
+        .diet-con-trung{
+          width: 448px !important;
+        }
+
+        .img-opacity-clear-1{
+          top: 12% !important;
+          width: 84px !important;
+          left: 32% !important;
+        }
+
+        .title-1 {
+          left: 37.86% !important;
+          top: 16% !important;
+          font-size: 24px !important;
+          padding: 3px 15px !important;
+        }
+
+        .title-2 {
+          width: 570px !important;
+          left: 19.894% !important;
+          font-size: 16px;
+          position: absolute;
+          top: 37% !important;
+        }
+
+        .title-3{
+          left: 21.5% !important;
+          top: 61% !important;
+          font-size: 16px !important;
+        }
+
+        .img-quan-ly{
+          width: 570px !important;
+          left: 50.5% !important;
+        }
+
+        .diet-con-trung-1{
+          width: 87px !important;
+          left: 32.76% !important;
+          top: 22% !important;
+        }
+
+        .dct-title-1{
+          left: 38.72% !important;
+          top: 30% !important;
+        }
+
+        .dct-title-2{
+          top: 47.5% !important;
+        }
+
+        .dvc-title-3{
+          top: 72% !important;
+          font-size: 16px !important;
+        }
+
+        .hinh-vuong{
+          width: 500px !important;
+        }
+
+      }
+    }
+  }
+
+  .vscn-chi-tiet{
+    .vscn-content{
+      .vscn-title{
+        font-size: 42px !important;
+      }
+    }
+  }
+
+  .ve-chung-toi-page{
+    .slide-top{
+      .slide-content{
+        top: 0 !important;
+        .dv-slide-title {
+          font-size: 56px !important;
+        }
+      }
+    }
+
+    .block-2{
+      .container-custom{
+        .block-title{
+          font-size: 27px !important;
+        }
+        .block-content{
+          font-size: 18px !important;
+          width: 236px !important;
+          letter-spacing: -0.36px !important;
+        }
+      }
+    }
+  }
+
+  .tin-tuc-page{
+    .block-1{
+      .img-bg {
+        width: 49.044% !important;
+      }
+      .bl-1-r{
+        width: 49.044% !important;
+      }
+      .title{
+        font-size: 27px !important;
+      }
+    }
+    .author {
+      font-size: 20px !important;
+    }
+
+    .block-2{
+      .title{
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  .chi-tiet-tin-tuc-page{
+    .author{
+      font-size: 20px !important;
+    }
+    .block-1{
+      .title{
+        font-size: 27px !important;
+        width: 787px;
+      }
+    }
+    .block-2{
+      .author{
+        font-size: 20px !important;
+      }
+      .title{
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  .thu-vien-anh-page {
+    .thu-vien-anh-content{
+      margin-bottom: 100px !important;
+      .block-1{
+        >img{
+          width: 770px !important;
+        }
+        .bl-1-r{
+          >img{
+            margin-bottom: 30px !important;
+          }
+          width: 770px !important;
+          .bl-1-img-2{
+            width: 770px !important;
+          }
+          .bl-1-img-3{
+            width: 370px !important;
+          }
+          .bl-1-img-4{
+            width: 370px !important;
+          }
+          .bl-1-r-1{
+            margin-bottom: 30px !important;
+          }
+        }
+      }
+      .block-2{
+        margin: 30px 0 30px 0 !important;
+        .bl-2-l{
+          width: 1170px !important;
+        }
+        .bl-2-r{
+          width: 370px !important;
+        }
+      }
+    }
+  }
+
+  .lien-he-page{
+    .slide-top{
+      .slide-content{
+        .lh-slide-title{
+          font-size: 56px !important;
+        }
+      }
+    }
+    .block-1{
+      margin: 60px auto 65px auto;
+    }
+  }
+
+  .font-content-1{
+    font-size: 18px;
+  }
+
+  .font-content-2{
+    font-size: 18px;
+  }
+
+  .home-page-tin-tuc{
+    width: 1171px;
+    margin: 90px auto 90px auto;
   }
 }

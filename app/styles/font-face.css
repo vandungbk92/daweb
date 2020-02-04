@@ -20,6 +20,34 @@
 }
 
 @font-face {
+  font-family: 'Montserrat-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../asset/Font/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../asset/Font/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../asset/Font/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../asset/Font/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'KozGoPr6N-Medium';
   font-style: normal;
   font-weight: normal;
@@ -36,7 +64,14 @@
   font-family: 'UTM-Bebas';
   font-style: normal;
   font-weight: normal;
-  src: url('../asset/Font/KozGoPr6N/KozGoPro-Regular.otf') format('truetype');
+  src: url('../asset/Font/UTM/UTM Bebas.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'UTM-Avo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../asset/Font/UTM/UTM Avo.ttf') format('truetype');
 }
 
 
