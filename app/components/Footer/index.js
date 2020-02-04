@@ -5,9 +5,9 @@ import IC_MAIL from '../../asset/Icon/IC_MAIL.svg';
 import GROUP_96 from '../../asset/Icon/Group96.svg';
 import IC_PHONE from '../../asset/Icon/ic_phone.svg';
 
-import flag_en from '../../asset/Image/flag_en.jpg';
-import flag_japan from '../../asset/Image/flag_japan.jpg';
-import flag_vn from '../../asset/Image/flag_vn.jpg';
+import FLAG_EN from '../../asset/Image/flag_en.jpg';
+import FLAG_JAPAN from '../../asset/Image/flag_japan.jpg';
+import FLAG_VN from '../../asset/Image/flag_vn.jpg';
 
 function Footer() {
   return (
@@ -49,9 +49,9 @@ function Footer() {
         <div className='language'>
           <div className='language__title'>{'Ngôn ngữ'}</div>
           <div className='language__item clearfix'>
-            <img className='language__flag' src={flag_vn} alt={''}/>
-            <img className='language__flag' src={flag_en} alt={''}/>
-            <img className='language__flag' src={flag_japan} alt={''}/>
+            <img className='language__flag' src={FLAG_VN} alt={''}/>
+            <img className='language__flag' src={FLAG_EN} alt={''}/>
+            <img className='language__flag' src={FLAG_JAPAN} alt={''}/>
           </div>
         </div>
       </section>
@@ -69,20 +69,20 @@ function Footer() {
 
         <div className="block block-3">
           <img src={GROUP_96}/>
-          <div  className="title my-3">Tầng 5 toà A1 toà nhà Ecolife Capital,<br/>số 58 Tố Hữu, Nam Từ Liêm, HN</div>
+          <div className="title my-3">Tầng 5 toà A1 toà nhà Ecolife Capital,<br/>số 58 Tố Hữu, Nam Từ Liêm, HN</div>
         </div>
 
         <div className="block block-4">
           <img src={IC_PHONE}/>
-          <div  className="title my-3">+84 24 666666 84</div>
+          <div className="title my-3">+84 24 666666 84</div>
         </div>
 
         <div className="block block-5">
           <div className="mb-3">Ngôn ngữ</div>
           <div>
-            <img className='' src={flag_vn} alt={''}/>
-            <img className='language__flag' src={flag_en} alt={''}/>
-            <img className='' src={flag_japan} alt={''}/>
+            <img className='' src={FLAG_VN} alt={''}/>
+            <img className='language__flag' src={FLAG_EN} alt={''}/>
+            <img className='' src={FLAG_JAPAN} alt={''}/>
           </div>
 
         </div>
