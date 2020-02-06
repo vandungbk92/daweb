@@ -1,6 +1,7 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import Index from '../../components/TinTuc/Index';
+import TinTucMobile from '../../components/TinTuc/TinTucMobile';
 import './TinTuc.scss';
 
 export default function TinTucPage() {
@@ -15,11 +16,15 @@ export default function TinTucPage() {
       dot: true
     }
   ]
-  return <div className="container-custom">
-    <Breadcrumb breadcrumb={breadcrumb}/>
+  return <div className="tin-tuc-full-page">
+    <div className="tin-tuc-large container-custom">
+      <Breadcrumb breadcrumb={breadcrumb}/>
 
-    <Index />
+      <Index />
 
+    </div>
+
+    <TinTucMobile />
   </div>
 
 }

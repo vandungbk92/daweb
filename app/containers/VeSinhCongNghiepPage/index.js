@@ -1,6 +1,7 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import VeSinhCongNghiep from '../../components/DichVu/VeSinhCongNghiep';
+import VeSinhCongNghiepMobile from '../../components/DichVu/VeSinhCongNghiepMobile';
 import './Vscn.scss'
 
 export default function VeSinhCongNghiepPage() {
@@ -19,10 +20,13 @@ export default function VeSinhCongNghiepPage() {
       dot: true
     },
   ]
-  return <div className="container-custom">
-    <Breadcrumb breadcrumb={breadcrumb}/>
+  return <div className="ve-sinh-cong-nghiep-page">
+    <div className="ve-sinh-cong-nghiep-large container-custom">
+      <Breadcrumb breadcrumb={breadcrumb}/>
 
-    <VeSinhCongNghiep />
+      <VeSinhCongNghiep />
+    </div>
+    <VeSinhCongNghiepMobile />
   </div>
 
 }

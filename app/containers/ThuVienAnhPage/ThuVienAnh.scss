@@ -1,4 +1,7 @@
 .thu-vien-anh-page {
+  .thu-vien-anh-mobile{
+    display: none;
+  }
   .thu-vien-anh-content{
     margin-bottom: 80px;
     .block-1{
@@ -37,6 +40,56 @@
         width: 273px;
       }
     }
+  }
+}
+
+@media (max-width: 1365px) {
+  .thu-vien-anh-mobile{
+    display: block !important;
+    .block-1{
+      width: 100%;
+      position: relative;
+      .img-sl{
+        position: relative;
+        width: 100%;
+      }
+      .tva-sl-title{
+        font-size: 18px;
+        color: #FFFFFF;
+        font-family: Montserrat-Bold;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .bg-slide{
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.45;
+      }
+    }
+
+    .block-2{
+      width: 398px;
+      margin: 20px auto 40px auto;
+      .bl-2-1{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .thu-vien-anh-large{
+    display: none;
   }
 }
 

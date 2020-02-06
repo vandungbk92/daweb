@@ -1,51 +1,133 @@
-.vscn-chi-tiet{
-  .vscn-11{
-    width: 49.06%;
+.ve-sinh-cong-nghiep-page{
+  .ve-sinh-cong-nghiep-mobile{
+    display: none;
   }
-  .vscn-content{
-    width: 50.93%;
-    display: table-cell;
-    background: #CE001B;
-    position: relative;
+  .vscn-chi-tiet{
+    .vscn-11{
+      width: 49.06%;
+    }
+    .vscn-content{
+      width: 50.93%;
+      display: table-cell;
+      background: #CE001B;
+      position: relative;
 
-    .vscn-title{
-      background: #221F64;
-      position: absolute;
-      width: 100%;
-      top: 15%;
+      .vscn-title{
+        background: #221F64;
+        position: absolute;
+        width: 100%;
+        top: 15%;
 
-      text-align: left;
-      font-family: Montserrat-Bold;
-      letter-spacing: 0;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      opacity: 1;
-      font-size: 28px;
+        text-align: left;
+        font-family: Montserrat-Bold;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        font-size: 28px;
+      }
+      .vscn-title-left{
+        position: absolute;
+        width: 20px;
+        background: #221F64;
+        top: 0;
+        bottom: 0;
+        left: -20px;
+      }
+      .vscn-detail{
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        z-index: 2;
+      }
+      .img-clear{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1;
+      }
     }
-    .vscn-title-left{
-      position: absolute;
-      width: 20px;
-      background: #221F64;
-      top: 0;
-      bottom: 0;
-      left: -20px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .ve-sinh-cong-nghiep-page{
+    .ve-sinh-cong-nghiep-large{
+      display: none;
     }
-    .vscn-detail{
-      position: absolute;
-      width: 100%;
-      top: 25%;
-      font-size: 14px;
-      text-align: left;
-      letter-spacing: 0;
-      color: #FFFFFF;
-      opacity: 1;
-      z-index: 2;
-    }
-    .img-clear{
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      z-index: 1;
+    .ve-sinh-cong-nghiep-mobile{
+      display: block !important;
+      margin-bottom: 40px;
+      .mb-block-2{
+        .mb-bl-2-img {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+
+          .img-content {
+            width: 194px;
+          }
+        }
+      }
+
+      .mb-vscn-slide{
+        margin: 20px 0;
+        .sl-content-custom{
+          text-align: center;
+          .sl-title{
+            padding: 5px 15px;
+            border-radius: 11px;
+            color: #FFFFFF;
+            background: #CE001B;
+            font: {
+              size: 10px;
+              family: Montserrat-Bold;
+            };
+          }
+        }
+
+      }
+
+      .mb-block-1{
+        .mb-block-1-title{
+          background: #221F64;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 60px;
+          .title{
+            font: {
+              size: 22px;
+              family: Montserrat-Bold;
+            };
+            color: #FFFFFF;
+            text-transform: uppercase;
+          }
+        }
+        .mb-block-1-content{
+          background: #CE001B;
+          position: relative;
+          .img-clear{
+            position: absolute;
+            /* top: 0; */
+            z-index: 1;
+            right: 20px;
+            bottom: 20px;
+          }
+
+          .vscn-detail{
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 30px;
+          }
+        }
+      }
+
     }
   }
 }

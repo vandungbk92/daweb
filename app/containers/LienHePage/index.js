@@ -1,11 +1,13 @@
 import React from 'react';
 import './LienHe.scss';
 import ve_chung_toi from '../../asset/Image/ve-chung-toi.png';
+import lien_he from '../../asset/ImageMobile/lien_he.png';
 
 export default function LienHePage() {
   return <div className="lien-he-page">
     <div className="slide-top">
-      <img src={ve_chung_toi} style={{position: 'relative'}}/>
+      <img src={ve_chung_toi} className="img-lh-top img-lh-top-large"/>
+      <img src={lien_he} className="img-lh-top img-lh-top-mobile"/>
       <div className="bg-slide"></div>
       <div className="slide-content">
         <div className="lh-slide-title mt-3 mb-4">liên hệ với chúng tôi</div>
@@ -14,8 +16,12 @@ export default function LienHePage() {
     </div>
     <div className="block-1">
       <div className="clearfix">
-        <input type="text" className="float-left input-row input-bmv px-3" placeholder="Họ tên*"/>
-        <input type="text" className="float-right input-row input-bmv px-3" placeholder="Email*"/>
+        <div className="float-left">
+          <input type="text" className="input-row input-bmv px-3" placeholder="Họ tên*"/>
+        </div>
+        <div className="float-right">
+          <input type="text" className="input-row input-bmv px-3 input-row-mobile" placeholder="Email*"/>
+        </div>
       </div>
       <div style={{margin: '20px 0 20px 0'}}>
         <input type="text" className=" w-100 input-bmv px-3" placeholder="Điện thoại"/>
@@ -27,7 +33,6 @@ export default function LienHePage() {
       <div className="text-center" style={{marginTop: '15px'}}>
         <button className="btn-lien-he">Gửi</button>
       </div>
-
     </div>
 
   </div>
