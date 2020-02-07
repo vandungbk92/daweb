@@ -20,6 +20,14 @@ function Header() {
 
   function handleClick(link) {
     history.push(link);
+
+    let jsIconMenu = document.getElementById('js-icon-menu');
+    let jsMenuList = document.getElementById('js-menu-list');
+    if(jsIconMenu && jsMenuList){
+      document.body.style.overflow = 'unset';
+      jsMenuList.style.width = '0px';
+      document.getElementById('js-menu-mobile').classList.remove('show');
+    }
   }
 
   function openNav() {
@@ -191,17 +199,17 @@ function Header() {
             </div>
           </div>
           <div id='js-menu-list' className='menu-list'>
-            <div className='menu-item'><span className='content active'>{'Trang Chủ'}</span></div>
+            <div className='menu-item'><span className='content active'  onClick={() => handleClick('/')}>{'Trang Chủ'}</span></div>
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content'>{'DỊCH VỤ'}</span></div>
+            <div className='menu-item'><span className='content' onClick={() => handleClick('/dich-vu')}>{'DỊCH VỤ'}</span></div>
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content'>{'VỀ CHÚNG TÔI'}</span></div>
+            <div className='menu-item'><span className='content' onClick={() => handleClick('/ve-chung-toi')}>{'VỀ CHÚNG TÔI'}</span></div>
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content'>{'TIN TỨC'}</span></div>
+            <div className='menu-item'><span className='content' onClick={() => handleClick('/tin-tuc')}>{'TIN TỨC'}</span></div>
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content'>{'THƯ VIỆN ẢNH'}</span></div>
+            <div className='menu-item'><span className='content' onClick={() => handleClick('/thu-vien-anh')}>{'THƯ VIỆN ẢNH'}</span></div>
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content'>{'LIÊN HỆ'}</span></div>
+            <div className='menu-item'><span className='content' onClick={() => handleClick('/lien-he')}>{'LIÊN HỆ'}</span></div>
             <img src={MENU_BORDER} alt=''/>
             <div className='menu-item'>
               <div className='content content__language'>

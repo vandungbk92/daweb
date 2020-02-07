@@ -16,6 +16,8 @@ import {
 import TinTuc from './TinTuc';
 import NoiDungChinh from './NoiDungChinh';
 import HomeSlider from './HomeSlider';
+import HomeSliderMobile from './HomeSliderMobile';
+import HomeMobile from './HomeMobile';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -49,9 +51,15 @@ export function HomePage({
 
   return (
     <div className='homepage-container'>
-      <HomeSlider/>
-      <NoiDungChinh/>
-      <TinTuc/>
+      <div className="homepage-container-large">
+        <HomeSlider/>
+        <NoiDungChinh/>
+        <TinTuc/>
+      </div>
+      <div className="homepage-container-mobile">
+        <HomeSliderMobile/>
+        <HomeMobile />
+      </div>
     </div>
   );
 }

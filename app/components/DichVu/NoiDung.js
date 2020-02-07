@@ -11,8 +11,10 @@ import dit_con_trung from '../../asset/Icon/dit_con_trung.svg';
 import dit_con_trung_1 from '../../asset/Icon/dit_con_trung_1.svg';
 
 import GROUP_85 from '../../asset/Image/Group85.svg';
-import van_hanh from '../../asset/Image/quan-ly-van-hanh.png';
-import dit_con_trung_png from '../../asset/Image/dit-con-trung.png';
+import van_hanh from '../../asset/Image/dich_vu_33.jpg';
+// import van_hanh from '../../asset/Image/dich_vu_55.jpg';
+import dit_con_trung_png from '../../asset/Image/dich_vu_44.jpg';
+// import dit_con_trung_png from '../../asset/Image/dit-con-trung.png';
 import icon_arrow_right from '../../asset/Image/icon_arrow_right.jpg';
 
 
