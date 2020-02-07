@@ -1,16 +1,16 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
-import DichVuPage from 'containers/DichVuPage/Loadable';
-import VeSinhCongNghiepPage from 'containers/VeSinhCongNghiepPage/Loadable';
-import VeChungToiPage from 'containers/VeChungToiPage/Loadable';
-import ThuVienAnhPage from 'containers/ThuVienAnhPage/Loadable';
-import LienHePage from 'containers/LienHePage/Loadable';
-import TinTucPage from 'containers/TinTucPage/Loadable';
-import ChiTietTinTucPage from 'containers/ChiTietTinTucPage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Footer from 'components/Footer';
+import HomePage from '../../containers/HomePage/Loadable';
+import DichVuPage from '../../containers/DichVuPage/Loadable';
+import VeSinhCongNghiepPage from '../../containers/VeSinhCongNghiepPage/Loadable';
+import VeChungToiPage from '../../containers/VeChungToiPage/Loadable';
+import ThuVienAnhPage from '../../containers/ThuVienAnhPage/Loadable';
+import LienHePage from '../../containers/LienHePage/Loadable';
+import TinTucPage from '../../containers/TinTucPage/Loadable';
+import ChiTietTinTucPage from '../../containers/ChiTietTinTucPage/Loadable';
+import NotFoundPage from '../../containers/NotFoundPage/Loadable';
+import Footer from '../../components/Footer';
 
 import GlobalStyle from '../../global-styles';
 import Header from '../../components/Header';

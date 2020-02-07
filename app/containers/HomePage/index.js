@@ -23,7 +23,7 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import {changeMenuActive} from '../LanguageProvider/actions';
+import { changeMenuActive } from '../LanguageProvider/actions';
 
 const key = 'home';
 
@@ -35,19 +35,23 @@ export function HomePage({
                            onMenuActive,
                            onSubmitForm,
                            onChangeUsername,
+                           location,
                          }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
 
-
-
   useEffect(() => {
     // When initial state username is not null, submit the form to load repos
     if (username && username.trim().length > 0) onSubmitForm();
-
+    console.log('location', location);
+    activeMenu();
     onMenuActive();
   }, []);
+
+  function activeMenu() {
+
+  }
 
   return (
     <div className='homepage-container'>
@@ -58,7 +62,7 @@ export function HomePage({
       </div>
       <div className="homepage-container-mobile">
         <HomeSliderMobile/>
-        <HomeMobile />
+        <HomeMobile/>
       </div>
     </div>
   );
@@ -88,7 +92,7 @@ export function mapDispatchToProps(dispatch) {
       dispatch(loadRepos());
     },
     onMenuActive: () => {
-      dispatch(changeMenuActive(1))
+      dispatch(changeMenuActive(1));
     },
   };
 }

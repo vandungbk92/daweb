@@ -10,6 +10,7 @@ import FLAG_JAPAN from '../../asset/Image/flag_japan.jpg';
 import FLAG_VN from '../../asset/Image/flag_vn.jpg';
 
 import Group_113 from '../../asset/Icon/Group_113.svg';
+import LOGO_2 from '../../asset/Icon/logo_2.svg';
 import global from '../../asset/Icon/global.svg';
 
 import { useHistory } from 'react-router-dom';
@@ -17,13 +18,31 @@ import { useHistory } from 'react-router-dom';
 function Header() {
 
   let history = useHistory();
+  const pathname = history.location.pathname;
+  const isHomepage = pathname === '/';
+  const isService = pathname === '/dich-vu';
+  const isAboutUs = pathname === '/ve-chung-toi';
+  const isNews = pathname === '/tin-tuc';
+  const isPhotoLibrary = pathname === '/thu-vien-anh';
+  const isContact = pathname === '/lien-he';
+  const isHygiene = pathname === '/ve-sinh-cong-nghiep';
+
+  React.useEffect(() => {
+    document.addEventListener('click', (e) => checkClickInsideButtonLanguage(e));
+    document.addEventListener('click', (e) => checkClickInsideMenu(e));
+
+    return () => {
+      document.removeEventListener('click', (e) => checkClickInsideButtonLanguage(e));
+      document.removeEventListener('click', (e) => checkClickInsideMenu(e));
+    };
+  }, []);
+
 
   function handleClick(link) {
     history.push(link);
-
     let jsIconMenu = document.getElementById('js-icon-menu');
     let jsMenuList = document.getElementById('js-menu-list');
-    if(jsIconMenu && jsMenuList){
+    if (jsIconMenu && jsMenuList) {
       document.body.style.overflow = 'unset';
       jsMenuList.style.width = '0px';
       document.getElementById('js-menu-mobile').classList.remove('show');
@@ -45,7 +64,6 @@ function Header() {
     }
     document.getElementById('js-menu-mobile').classList.toggle('show');
   }
-
 
   function toggleMenuLanguage() {
     let jsLanguage = document.getElementById('js-language__list');
@@ -98,15 +116,55 @@ function Header() {
     }
   }
 
-  React.useEffect(() => {
-    document.addEventListener('click', (e) => checkClickInsideButtonLanguage(e));
-    document.addEventListener('click', (e) => checkClickInsideMenu(e));
+  const styleMenuPc = {
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'space-between',
+  };
 
-    return () => {
-      document.removeEventListener('click', (e) => checkClickInsideButtonLanguage(e));
-      document.removeEventListener('click', (e) => checkClickInsideMenu(e));
-    };
-  }, []);
+  if (!isPhotoLibrary && !isHygiene) {
+    styleMenuPc.borderBottom = `1px solid ${isNews ? 'rgba(0,0,0,.2)' : 'rgba(255, 255, 255, .2)'}`;
+  }
+
+  const navMenuPc = <div className="w-100 menu-header-top">
+    <div className="h-100" style={styleMenuPc}>
+      <div style={{ cursor: 'pointer' }} onClick={() => handleClick('/')}>
+        <img src={isNews ? LOGO_2 : Group_113} alt="ic_mail"/>
+      </div>
+      <div style={{ display: 'flex', height: '100%', alignItems: 'center' }}>
+        <div className={`menu-header ${isHomepage ? 'menu-active' : ''}`}
+             id='js-homepage' onClick={() => handleClick('/')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Trang chủ</span>
+        </div>
+
+        <div className={`menu-header ${(isService || isHygiene) ? 'menu-active' : ''}`}
+             id='js-service' onClick={() => handleClick('/dich-vu')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Dịch vụ</span>
+        </div>
+
+        <div className={`menu-header ${isAboutUs ? 'menu-active' : ''}`}
+             id='js-about-us' onClick={() => handleClick('/ve-chung-toi')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Về chúng tôi</span>
+        </div>
+
+        <div className={`menu-header ${isNews ? 'menu-active-red' : ''}`}
+             id='js-news' onClick={() => handleClick('/tin-tuc')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Tin tức</span>
+        </div>
+
+        <div className={`menu-header ${isPhotoLibrary ? 'menu-active' : ''}`}
+             id='js-photo-library' onClick={() => handleClick('/thu-vien-anh')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Thư viện ảnh</span>
+        </div>
+
+        <div className={`menu-header menu-header-last ${isContact ? 'menu-active' : ''}`}
+             id='js-contact' onClick={() => handleClick('/lien-he')}>
+          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Liên hệ</span>
+        </div>
+
+      </div>
+    </div>
+  </div>;
 
   return (
     <div className="header">
@@ -127,47 +185,19 @@ function Header() {
               <img src={FLAG_JAPAN} alt="FLAG_JAPAN" className="header__flag"/>
             </li>
           </ul>
-
-          <div className="w-100 menu-header-top">
-            <div
-              style={{
-                alignItems: 'center',
-                borderBottom: '1px solid rgba(255, 255, 255, .2)',
-                display: 'flex',
-                justifyContent: 'space-between',
-              }}
-              className="h-100">
-              <div style={{ cursor: 'pointer' }} onClick={() => handleClick('/')}>
-                <img src={Group_113} alt="ic_mail"/>
-              </div>
-              <div style={{ display: 'flex', height: '100%', alignItems: 'center' }}>
-                <div className="menu-active menu-header" onClick={() => handleClick('/')}>
-                  <span className="menu-text">Trang chủ</span>
-                </div>
-                <div className="menu-header">
-                  <span className="menu-text" onClick={() => handleClick('/dich-vu')}>Dịch vụ</span>
-                </div>
-                <div className="menu-header">
-                  <span className="menu-text" onClick={() => handleClick('/ve-chung-toi')}>Về chúng tôi</span>
-                </div>
-                <div className="menu-header">
-                  <span className="menu-text" onClick={() => handleClick('/tin-tuc')}>Tin tức</span>
-                </div>
-                <div className="menu-header">
-                  <span className="menu-text" onClick={() => handleClick('/thu-vien-anh')}>Thư viện ảnh</span>
-                </div>
-                <div className="menu-header menu-header-last" onClick={() => handleClick('/lien-he')}>
-                  <span className="menu-text">Liên hệ</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          {!isNews && navMenuPc}
         </div>
       </div>
 
+      {!!isNews && <div style={isNews ? { backgroundColor: '#fff' } : {}}>
+        <div className="container-custom header-large">
+          {navMenuPc}
+        </div>
+      </div>}
+
       <div className="header-mobile">
         <div className="header-content">
-          <img src={MENU_BUTTON} onClick={() => openNav()} id='js-icon-menu'  className='icon-menu' alt=''/>
+          <img src={MENU_BUTTON} onClick={() => openNav()} id='js-icon-menu' className='icon-menu' alt=''/>
           <img src={Group_113} className='icon-logo' alt=''/>
           <div id='js-language-container' className='language-container'>
             <div className='language' onClick={() => toggleMenuLanguage()}>
@@ -199,23 +229,64 @@ function Header() {
             </div>
           </div>
           <div id='js-menu-list' className='menu-list'>
-            <div className='menu-item'><span className='content active'  onClick={() => handleClick('/')}>{'Trang Chủ'}</span></div>
+            <div className='menu-item'>
+              <span className={`content ${isHomepage ? 'active' : ''}`}
+                    onClick={() => handleClick('/')}>
+                {'Trang Chủ'}</span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content' onClick={() => handleClick('/dich-vu')}>{'DỊCH VỤ'}</span></div>
+
+            <div className='menu-item'>
+              <span className={`content ${(isService || isHygiene) ? 'active' : ''}`}
+                    onClick={() => handleClick('/dich-vu')}>
+                {'DỊCH VỤ'}
+              </span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content' onClick={() => handleClick('/ve-chung-toi')}>{'VỀ CHÚNG TÔI'}</span></div>
+
+            <div className='menu-item'>
+              <span className={`content ${isAboutUs ? 'active' : ''}`}
+                    onClick={() => handleClick('/ve-chung-toi')}>
+                {'VỀ CHÚNG TÔI'}
+              </span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content' onClick={() => handleClick('/tin-tuc')}>{'TIN TỨC'}</span></div>
+
+            <div className='menu-item'>
+              <span className={`content ${isNews ? 'active' : ''}`}
+                    onClick={() => handleClick('/tin-tuc')}>
+                {'TIN TỨC'}
+              </span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content' onClick={() => handleClick('/thu-vien-anh')}>{'THƯ VIỆN ẢNH'}</span></div>
+
+            <div className='menu-item'>
+              <span className={`content ${isPhotoLibrary ? 'active' : ''}`}
+                    onClick={() => handleClick('/thu-vien-anh')}>
+                {'THƯ VIỆN ẢNH'}
+              </span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
-            <div className='menu-item'><span className='content' onClick={() => handleClick('/lien-he')}>{'LIÊN HỆ'}</span></div>
+
+            <div className='menu-item'>
+              <span className={`content ${isContact ? 'active' : ''}`}
+                    onClick={() => handleClick('/lien-he')}>
+                {'LIÊN HỆ'}
+              </span>
+            </div>
+
             <img src={MENU_BORDER} alt=''/>
             <div className='menu-item'>
               <div className='content content__language'>
                 {'Ngôn ngữ'}
               </div>
             </div>
+
             <div className='menu-item'>
               <div className='content content__language'>
                 <div className='content__language-flag'>
