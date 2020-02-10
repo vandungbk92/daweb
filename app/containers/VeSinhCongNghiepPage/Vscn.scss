@@ -1,18 +1,20 @@
-.ve-sinh-cong-nghiep-page{
-  .ve-sinh-cong-nghiep-mobile{
+.ve-sinh-cong-nghiep-page {
+  .ve-sinh-cong-nghiep-mobile {
     display: none;
   }
-  .vscn-chi-tiet{
-    .vscn-11{
+
+  .vscn-chi-tiet {
+    .vscn-11 {
       width: 49.06%;
     }
-    .vscn-content{
+
+    .vscn-content {
       width: 50.93%;
       display: table-cell;
       background: #CE001B;
       position: relative;
 
-      .vscn-title{
+      .vscn-title {
         background: #221F64;
         position: absolute;
         width: 100%;
@@ -26,7 +28,8 @@
         opacity: 1;
         font-size: 28px;
       }
-      .vscn-title-left{
+
+      .vscn-title-left {
         position: absolute;
         width: 20px;
         background: #221F64;
@@ -34,7 +37,8 @@
         bottom: 0;
         left: -20px;
       }
-      .vscn-detail{
+
+      .vscn-detail {
         position: absolute;
         width: 100%;
         top: 25%;
@@ -45,7 +49,8 @@
         opacity: 1;
         z-index: 2;
       }
-      .img-clear{
+
+      .img-clear {
         position: absolute;
         bottom: 15px;
         right: 15px;
@@ -56,14 +61,16 @@
 }
 
 @media (max-width: 1365px) {
-  .ve-sinh-cong-nghiep-page{
-    .ve-sinh-cong-nghiep-large{
+  .ve-sinh-cong-nghiep-page {
+    .ve-sinh-cong-nghiep-large {
       display: none;
     }
-    .ve-sinh-cong-nghiep-mobile{
+
+    .ve-sinh-cong-nghiep-mobile {
       display: block !important;
       margin-bottom: 40px;
-      .mb-block-2{
+
+      .mb-block-2 {
         .mb-bl-2-img {
           display: flex;
           text-align: center;
@@ -75,32 +82,42 @@
         }
       }
 
-      .mb-vscn-slide{
+      .mb-vscn-slide {
         margin: 20px 0;
-        .sl-content-custom{
+
+        .sl-content-custom {
           text-align: center;
-          .sl-title{
+          display: flex;
+
+          .sl-title {
+            margin: auto;
             padding: 5px 15px;
             border-radius: 11px;
-            color: #FFFFFF;
-            background: #CE001B;
+            color: #222222;
+
             font: {
               size: 10px;
               family: Montserrat-Bold;
             };
+
+            &.active {
+              color: #FFFFFF;
+              background: #CE001B;
+            }
           }
         }
 
       }
 
-      .mb-block-1{
-        .mb-block-1-title{
+      .mb-block-1 {
+        .mb-block-1-title {
           background: #221F64;
           display: flex;
           align-items: center;
           justify-content: space-between;
           height: 60px;
-          .title{
+
+          .title {
             font: {
               size: 22px;
               family: Montserrat-Bold;
@@ -109,10 +126,12 @@
             text-transform: uppercase;
           }
         }
-        .mb-block-1-content{
+
+        .mb-block-1-content {
           background: #CE001B;
           position: relative;
-          .img-clear{
+
+          .img-clear {
             position: absolute;
             /* top: 0; */
             z-index: 1;
@@ -120,7 +139,7 @@
             bottom: 20px;
           }
 
-          .vscn-detail{
+          .vscn-detail {
             font-size: 12px;
             color: #FFFFFF;
             line-height: 30px;

@@ -1,21 +1,27 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
 import tt_slide from '../../asset/ImageMobile/tt_slide.png';
 import tt_1 from '../../asset/ImageMobile/tt_1.png';
 import tt_2 from '../../asset/ImageMobile/tt_22.png';
 import tt_3 from '../../asset/ImageMobile/tt_3.png';
 import tt_4 from '../../asset/ImageMobile/tt_4.png';
 
-
 export default function TinTucMobile() {
 
+  let history = useHistory();
+  function handleClick(link) {
+    history.push(link);
+  }
+
   const dataTinTuc = [{
-      author: 'Anh Tuấn',
-      time: 'July, 08/2017',
-      title: 'Tập huấn công tác phòng cháy chữa cháy...',
-      content: 'Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nul quam aenean sociis quis sem neque vici libero...',
-      img: tt_1,
-      link: '/chi-tiet-tin-tuc',
-    },
+    author: 'Anh Tuấn',
+    time: 'July, 08/2017',
+    title: 'Tập huấn công tác phòng cháy chữa cháy...',
+    content: 'Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nul quam aenean sociis quis sem neque vici libero...',
+    img: tt_1,
+    link: '/chi-tiet-tin-tuc',
+  },
 
     {
       author: 'Vân Anh',
@@ -53,8 +59,8 @@ export default function TinTucMobile() {
       </div>
       <div className="title my-2" onClick={() => handleClick(data.link)}>{data.title}</div>
       <div className="content">{data.content}</div>
-    </div>
-  })
+    </div>;
+  });
 
   return <div className="tin-tuc-mobile">
     <div className="block-1">

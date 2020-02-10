@@ -13,7 +13,7 @@ function DichVu() {
   return (
     <div className="slide-dich-vu">
       <img src={slide_dich_vu} style={{position: 'relative'}}/>
-      <div className="bg-slide"></div>
+      <div className="bg-slide"/>
       <div className="dich-vu-page container-custom">
         <div className="dv-slide-title my-4">DỊCH VỤ</div>
         <div className="dv-slide-content">Hoạt động kinh doanh của BM-V bao gồm nhiều lĩnh vực khác nhau và rất đa dạng. Được cấu thành từ nhiều lĩnh vực có liên quan, ảnh
