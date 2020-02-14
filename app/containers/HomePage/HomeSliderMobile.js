@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-
+import { useHistory } from "react-router-dom";
 import slide_1 from '../../asset/ImageMobile/slide_1.png';
 import slide_11 from '../../asset/ImageMobile/home_sl_1.jpg';
 import slide_2 from '../../asset/ImageMobile/slide_2.png';
@@ -10,8 +10,6 @@ import slide_33 from '../../asset/ImageMobile/home_sl_3.jpg';
 import slide_4 from '../../asset/ImageMobile/slide_4.png';
 import slide_44 from '../../asset/ImageMobile/home_sl_4.jpg';
 
-
-import Logo_white from '../../asset/Icon/Logo_white.svg';
 import ic_arrow_right from '../../asset/Icon/Group_40.svg';
 import ic_arrow_left from '../../asset/Icon/Group_42.svg';
 
@@ -74,6 +72,11 @@ function HomeSliderMobile() {
     pauseOnHover: true
   };
 
+  let history = useHistory();
+
+  function handleClick(link) {
+    history.push(link);
+  }
 
   return (
     <div className="home-slider">
@@ -97,7 +100,7 @@ function HomeSliderMobile() {
         <div className="sl-content-content">Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong tòa nhà thì có công việc
         </div>
         <div className="sl-content-content">tiến hành hàng ngày và có công việc tiến hành định kỳ.</div>
-        <div className="sl-content-btn">
+        <div className="sl-content-btn" onClick={() => handleClick('ve-sinh-cong-nghiep')}>
           Xem thêm
         </div>
       </div>

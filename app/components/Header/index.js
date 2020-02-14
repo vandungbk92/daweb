@@ -122,44 +122,44 @@ function Header() {
     justifyContent: 'space-between',
   };
 
-  if (!isPhotoLibrary && !isHygiene) {
-    styleMenuPc.borderBottom = `1px solid ${isNews ? 'rgba(0,0,0,.2)' : 'rgba(255, 255, 255, .2)'}`;
+  if (!isHygiene) {
+    styleMenuPc.borderBottom = `1px solid ${(isNews||isPhotoLibrary) ? 'rgba(0,0,0,.2)' : 'rgba(255, 255, 255, .2)'}`;
   }
 
   const navMenuPc = <div className="w-100 menu-header-top">
     <div className="h-100" style={styleMenuPc}>
       <div style={{ cursor: 'pointer' }} onClick={() => handleClick('/')}>
-        <img src={isNews ? LOGO_2 : Group_113} alt="ic_mail"/>
+        <img src={(isNews||isPhotoLibrary) ? LOGO_2 : Group_113} alt="ic_mail"/>
       </div>
       <div style={{ display: 'flex', height: '100%', alignItems: 'center' }}>
         <div className={`menu-header ${isHomepage ? 'menu-active' : ''}`}
              id='js-homepage' onClick={() => handleClick('/')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Trang chủ</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Trang chủ</span>
         </div>
 
         <div className={`menu-header ${(isService || isHygiene) ? 'menu-active' : ''}`}
              id='js-service' onClick={() => handleClick('/dich-vu')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Dịch vụ</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Dịch vụ</span>
         </div>
 
         <div className={`menu-header ${isAboutUs ? 'menu-active' : ''}`}
              id='js-about-us' onClick={() => handleClick('/ve-chung-toi')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Về chúng tôi</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Về chúng tôi</span>
         </div>
 
         <div className={`menu-header ${isNews ? 'menu-active-red' : ''}`}
              id='js-news' onClick={() => handleClick('/tin-tuc')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Tin tức</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Tin tức</span>
         </div>
 
-        <div className={`menu-header ${isPhotoLibrary ? 'menu-active' : ''}`}
+        <div className={`menu-header ${isPhotoLibrary ? 'menu-active-red' : ''}`}
              id='js-photo-library' onClick={() => handleClick('/thu-vien-anh')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Thư viện ảnh</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Thư viện ảnh</span>
         </div>
 
         <div className={`menu-header menu-header-last ${isContact ? 'menu-active' : ''}`}
              id='js-contact' onClick={() => handleClick('/lien-he')}>
-          <span className="menu-text" style={isNews ? { color: '#222222' } : {}}>Liên hệ</span>
+          <span className="menu-text" style={(isNews||isPhotoLibrary) ? { color: '#222222' } : {}}>Liên hệ</span>
         </div>
 
       </div>
@@ -185,11 +185,11 @@ function Header() {
               <img src={FLAG_JAPAN} alt="FLAG_JAPAN" className="header__flag"/>
             </li>
           </ul>
-          {!isNews && navMenuPc}
+          {!isNews && !isPhotoLibrary && navMenuPc}
         </div>
       </div>
 
-      {!!isNews && <div style={isNews ? { backgroundColor: '#fff' } : {}}>
+      {(!!isNews || !!isPhotoLibrary) && <div style={(isNews || isPhotoLibrary) ? { backgroundColor: '#fff' } : {}}>
         <div className="container-custom header-large">
           {navMenuPc}
         </div>

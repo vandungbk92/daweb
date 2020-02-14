@@ -1,15 +1,17 @@
 import React, { Fragment } from 'react';
-import TIANSHU_LIU from '../../asset/Image/tianshu-liu.png';
-import MASK_GROUP_16 from '../../asset/Image/MaskGroup16.png';
-import MASK_GROUP_8 from '../../asset/Image/MaskGroup8.png';
+import { useHistory } from "react-router-dom";
 import GROUP_84 from '../../asset/Image/Group84.svg';
 import GROUP_85 from '../../asset/Image/Group85.svg';
 import GROUP_86 from '../../asset/Image/Group86.svg';
 import home_page_1 from '../../asset/ImageMobile/home_page_1.jpg';
 import VACUUM_CLEANER from '../../asset/Image/vacuum-cleaner.svg';
-import cleaner from '../../asset/Icon/vacuum-cleaner-vscn.svg';
 
 export function HomeMobile() {
+  let history = useHistory();
+
+  function handleClick(link) {
+    history.push(link);
+  }
   return (
     <div className='homepage-mobile'>
       <div className="mb-block-1-content">
@@ -27,7 +29,7 @@ export function HomeMobile() {
           Tiền thân là công ty cổ phần dịch vụ Maxxclean Việt Nam thành lập năm 2013 và đã có những thành tựu nhất định trong lĩnh vực. Vào năm 2019 sau khi thỏa thuận thống nhất giữa 2 bên thì công ty Birumen Kagoshima đã đầu tư và mua lại 70% cổ phần với mục đích bằng kinh nghiệm năng lực và tư duy của người Nhật sẽ sớm thúc đẩy sự phát triển của công ty trong lĩnh vực. ( Cuối năm 2019 công ty chính thức đổi tên thành Công ty cổ phần quản lý tòa nhà Việt Nam)
         </div>
         <div className="py-3">
-          <span className="btn-read-more-home">XEM THÊM</span>
+          <span className="btn-read-more-home" onClick={() => handleClick('ve-chung-toi')}>XEM THÊM</span>
         </div>
         {/*<div className="vscn-detail col-sm-12"><br/>Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong tòa nhà thì có công việc tiến hành hàng ngày và có công việc tiến hành định kỳ <br />
           Chúng tôi cũng thực hiện tất cả các công việc như phủ sáp sàn nhà làm bằng vật liệu dẻo (tấm dán, miếng dán), vệ sinh thảm, lau chùi thiết bị vệ sinh, vệ sinh trần, tường nhà, vệ sinh bồn rửa mặt, vệ sinh quạt thông gió, vệ sinh màng lọc điều hòa, vệ sinh máy hút mùi. Chúng tôi luôn theo đuổi sự nhất quán giữa sạch sẽ và hài hòa, nỗ lực với một thái độ khắt khe.

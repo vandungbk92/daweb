@@ -112,8 +112,8 @@ function NoiDung() {
             bị), mở ra một cánh cửa mới trong việc cung cấp các giải pháp bảo trì tòa nhà.
           </div>
           <div style={{ display: 'flex' }} className="mt-3">
-            <div className="bl-4-btn mr-5">XEM DỊCH VỤ</div>
-            <div className="bl-4-btn">LIÊN HỆ VỚI CHÚNG TÔI</div>
+            <div className="bl-4-btn mr-5" onClick={() => handleClick('/dich-vu')}>XEM DỊCH VỤ</div>
+            <div className="bl-4-btn" onClick={() => handleClick('/lien-he')}>LIÊN HỆ VỚI CHÚNG TÔI</div>
           </div>
         </div>
       </div>

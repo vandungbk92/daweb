@@ -10,7 +10,7 @@ import vscn_6 from '../../asset/Image/vscn-6.png';
 import vscn_7 from '../../asset/Image/vscn-7.png';
 import vscn_8 from '../../asset/Image/vscn-8.png';
 
-import cleaner from '../../asset/Icon/vacuum-cleaner-vscn.svg';
+import dit_con_trung from '../../asset/Icon/dit_con_trung.svg';
 
 function VeSinhCongNghiep() {
 
@@ -27,13 +27,18 @@ function VeSinhCongNghiep() {
 
           <div className="vscn-title col-sm-12">
             <div className="vscn-title-left"></div>
-            <div>Vệ sinh công nghiệp</div>
+            <div>DIỆT CÔN TRÙNG</div>
           </div>
-          <div className="vscn-detail col-sm-12 mt-2">Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong tòa nhà thì có công việc tiến hành hàng ngày và có công việc tiến hành định kỳ <br />
-            Chúng tôi cũng thực hiện tất cả các công việc như phủ sáp sàn nhà làm bằng vật liệu dẻo (tấm dán, miếng dán), vệ sinh thảm, lau chùi thiết bị vệ sinh, vệ sinh trần, tường nhà, vệ sinh bồn rửa mặt, vệ sinh quạt thông gió, vệ sinh màng lọc điều hòa, vệ sinh máy hút mùi. Chúng tôi luôn theo đuổi sự nhất quán giữa sạch sẽ và hài hòa, nỗ lực với một thái độ khắt khe.
-            <br />Về phần công việc bên ngoài các tòa nhà thì để duy trì lâu nhất có thể trạng thái khi vừa mới hoàn thành xong thì có các công việc như vệ sinh chỗ để xe, vệ sinh ray cửa kính, vệ sinh kính, rửa tường, v.v…
-            <br />Chúng tôi đề xuất nên tiến hành vệ sinh định kỳ.</div>
-          <img src={cleaner} className="img-clear"/>
+          <div className="vscn-detail col-sm-12 mt-2">
+            Chuột, gián hay những côn trùng khác thì gây ra những phiền phức về mặt vệ sinh đối với cơ thể con người. Để
+            giảm thiểu và xử lý triệt để vấn đề này thì cần tiến hành các công việc sau:
+            <br/>1. Tiền khảo sát (Khảo sát số lượng, tình trạng môi trường sống thực tế của vật gây hại.
+            <br/>2. Kế hoạch tiến hành (Lựa chọn phương pháp tiêu diệt, lựa chọn sự phán đoán hiệu quả, đưa ra lịch
+            trình công việc, v,v…).
+            <br/>3. Tiến hành công việc.
+            <br/>4. Tiến hành đánh giá kết quả (kiểm tra tình hình thực tế…) và tiêu diệt, phòng ngừa triệt để.
+          </div>
+          <img src={dit_con_trung} className="img-clear"/>
         </div>
 
         <div className="vscn-11"  style={{display: 'table-cell'}}>

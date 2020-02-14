@@ -114,8 +114,8 @@ function VeChungToiMobile() {
           <div className="bl-4-title">Sứ mệnh của chúng tôi</div>
           <div className="bl-4-content">Chúng tôi theo đuổi mục tiêu hoàn thiện Phần mềm <br/>(con người) và Phần cứng (Thiết bị), <br/> mở ra một cánh cửa mới trong việc cung cấp các <br/>giải pháp bảo trì tòa nhà.</div>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className="mt-3">
-            <div className="bl-4-btn mb-3">XEM DỊCH VỤ</div>
-            <div className="bl-4-btn">LIÊN HỆ VỚI CHÚNG TÔI</div>
+            <div className="bl-4-btn mb-3" onClick={() => handleClick('/dich-vu')}>XEM DỊCH VỤ</div>
+            <div className="bl-4-btn" onClick={() => handleClick('/lien-he')}>LIÊN HỆ VỚI CHÚNG TÔI</div>
           </div>
         </div>
       </div>

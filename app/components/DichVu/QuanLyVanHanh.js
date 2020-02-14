@@ -10,9 +10,9 @@ import vscn_6 from '../../asset/Image/vscn-6.png';
 import vscn_7 from '../../asset/Image/vscn-7.png';
 import vscn_8 from '../../asset/Image/vscn-8.png';
 
-import cleaner from '../../asset/Icon/vacuum-cleaner-vscn.svg';
+import dit_con_trung from '../../asset/Icon/quan_ly_van_hanh.svg';
 
-function VeSinhCongNghiep() {
+function QuanLyVanHanh() {
 
   let history = useHistory();
 
@@ -27,13 +27,12 @@ function VeSinhCongNghiep() {
 
           <div className="vscn-title col-sm-12">
             <div className="vscn-title-left"></div>
-            <div>Vệ sinh công nghiệp</div>
+            <div>QUẢN LÝ VẬN HÀNH</div>
           </div>
-          <div className="vscn-detail col-sm-12 mt-2">Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong tòa nhà thì có công việc tiến hành hàng ngày và có công việc tiến hành định kỳ <br />
-            Chúng tôi cũng thực hiện tất cả các công việc như phủ sáp sàn nhà làm bằng vật liệu dẻo (tấm dán, miếng dán), vệ sinh thảm, lau chùi thiết bị vệ sinh, vệ sinh trần, tường nhà, vệ sinh bồn rửa mặt, vệ sinh quạt thông gió, vệ sinh màng lọc điều hòa, vệ sinh máy hút mùi. Chúng tôi luôn theo đuổi sự nhất quán giữa sạch sẽ và hài hòa, nỗ lực với một thái độ khắt khe.
-            <br />Về phần công việc bên ngoài các tòa nhà thì để duy trì lâu nhất có thể trạng thái khi vừa mới hoàn thành xong thì có các công việc như vệ sinh chỗ để xe, vệ sinh ray cửa kính, vệ sinh kính, rửa tường, v.v…
-            <br />Chúng tôi đề xuất nên tiến hành vệ sinh định kỳ.</div>
-          <img src={cleaner} className="img-clear"/>
+          <div className="vscn-detail col-sm-12 mt-2">
+            Chúng tôi đã có kinh nghiệm nhiều năm trong việc quản lý chung cư. Từ việc vệ sinh, quản lý, kiểm tra cơ sở thiết bị vật chất, thu phí điện nước, phí quản lý hàng tháng và các khoản thu khác, cho đến việc kế toán, quản lý kinh doanh của hiệp hội quản lý chung cư doanh, chúng tôi nỗ lực để tăng sự thoải mái và thuận tiện cho cư dân.
+          </div>
+          <img src={dit_con_trung} className="img-clear"/>
         </div>
 
         <div className="vscn-11"  style={{display: 'table-cell'}}>
@@ -59,4 +58,4 @@ function VeSinhCongNghiep() {
   );
 }
 
-export default VeSinhCongNghiep;
+export default QuanLyVanHanh;

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { useHistory } from "react-router-dom";
 import HINH_VUONG from '../../asset/Image/hinh_vuong.jpg';
 import TIANSHU_LIU from '../../asset/Image/tianshu-liu.png';
 import MASK_GROUP_16 from '../../asset/Image/MaskGroup16.png';
@@ -9,6 +10,11 @@ import GROUP_86 from '../../asset/Image/Group86.svg';
 import VACUUM_CLEANER from '../../asset/Image/vacuum-cleaner.svg';
 
 export function NoiDungChinh() {
+  let history = useHistory();
+
+  let handleClick = (link) => {
+    history.push(link);
+  }
   return (
     <div className='product-container'>
       <div className='product__background--red'/>
@@ -28,7 +34,7 @@ export function NoiDungChinh() {
             {'Tiền thân là công ty cổ phần dịch vụ Maxxclean Việt Nam thành lập năm 2013 và đã có những thành tựu nhất định trong lĩnh vực. Vào năm 2019 sau khi thỏa thuận thống nhất giữa 2 bên thì công ty Birumen Kagoshima đã đầu tư và mua lại 70% cổ phần với mục đích bằng kinh nghiệm năng lực và tư duy của người Nhật sẽ sớm thúc đẩy sự phát triển của công ty trong lĩnh vực. (Cuối năm 2019 công ty chính thức đổi tên thành Công ty cổ phần quản lý tòa nhà Việt Nam)'}
           </div>
 
-          <button className='btn-more'>{'XEM THÊM'}</button>
+          <button className='btn-more' onClick={() => handleClick('/ve-chung-toi')}>{'XEM THÊM'}</button>
         </div>
       </div>
 
