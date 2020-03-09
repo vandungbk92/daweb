@@ -9,6 +9,8 @@ import GROUP_85 from '../../asset/Image/Group85.svg';
 import GROUP_86 from '../../asset/Image/Group86.svg';
 import VACUUM_CLEANER from '../../asset/Image/vacuum-cleaner.svg';
 
+import LogoBMK from '../../asset/quanly/Logo-bm-k.svg';
+
 export function NoiDungChinh() {
   let history = useHistory();
 
@@ -84,20 +86,24 @@ export function NoiDungChinh() {
       </div>
 
       <div className='product__bottom'>
+
         <div className='product__bottom__content'>
-          <div className='content__item_left'></div>
-          <div className='content__item' style={{borderRight: '1px solid rgba(255, 255, 255, 0.5)'}}>
-            <div className='content__item__number'>{'50'}</div>
-            <div className='content__item__text'>{'Trên 50 năm kinh nghiệm'}</div>
-          </div>
-          <div className='content__item '>
-            <div className='content__item__number'>{'500'}</div>
-            <div className='content__item__text'>{'Hơn 500 cán bộ công nhân viên'}</div>
-            <div className='content__item__text'>{'với tay nghề nhiệt huyết'}</div>
-          </div>
-          <div className='content__item' style={{borderLeft: '1px solid rgba(255, 255, 255, 0.5)'}}>
-            <div className='content__item__number'>{'7'}</div>
-            <div className='content__item__text'>{'7 lĩnh vực chủ chốt'}</div>
+          <img src={LogoBMK} className="logo-bmk"/>
+          <div className="logo-bmk-txt text-center mt-4 mb-5">Công ty mẹ Birumen Kagoshima với</div>
+          <div className="d-flex align-items-center justify-content-center">
+            <div className='content__item' style={{borderRight: '1px solid rgba(255, 255, 255, 0.5)'}}>
+              <div className='content__item__number'>{'50'}</div>
+              <div className='content__item__text'>{'Trên 50 năm kinh nghiệm'}</div>
+            </div>
+            <div className='content__item '>
+              <div className='content__item__number'>{'500'}</div>
+              <div className='content__item__text'>{'Hơn 500 cán bộ công nhân viên'}</div>
+              <div className='content__item__text'>{'với tay nghề nhiệt huyết'}</div>
+            </div>
+            <div className='content__item' style={{borderLeft: '1px solid rgba(255, 255, 255, 0.5)'}}>
+              <div className='content__item__number'>{'7'}</div>
+              <div className='content__item__text'>{'7 lĩnh vực chủ chốt'}</div>
+            </div>
           </div>
         </div>
       </div>

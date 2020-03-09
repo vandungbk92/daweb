@@ -42,7 +42,7 @@
         position: absolute;
         width: 100%;
         top: 25%;
-        font-size: 14px;
+        font-size: 12px !important;
         text-align: left;
         letter-spacing: 0;
         color: #FFFFFF;
@@ -112,6 +112,7 @@
       }
 
       .mb-block-1 {
+        background: #CE001B;
         .mb-block-1-title {
           background: #221F64;
           display: flex;

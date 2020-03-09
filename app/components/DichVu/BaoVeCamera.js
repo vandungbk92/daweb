@@ -1,14 +1,13 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import vscn_1 from '../../asset/Image/vscn-1.png';
-import vscn_11 from '../../asset/Image/vscn_11.png';
-import vscn_2 from '../../asset/Image/vscn-2.png';
-import vscn_3 from '../../asset/Image/vscn-3.png';
-import vscn_4 from '../../asset/Image/vscn-4.png';
-import vscn_5 from '../../asset/Image/vscn-5.png';
-import vscn_6 from '../../asset/Image/vscn-6.png';
-import vscn_7 from '../../asset/Image/vscn-7.png';
-import vscn_8 from '../../asset/Image/vscn-8.png';
+import anh_1 from '../../asset/dichvu/camera/anh_1.jpg'
+import anh_2 from '../../asset/dichvu/camera/anh_2.jpg'
+import anh_3 from '../../asset/dichvu/camera/anh_3.jpg'
+import anh_4 from '../../asset/dichvu/camera/anh_4.jpg'
+import anh_5 from '../../asset/dichvu/camera/anh_5.jpg'
+import anh_6 from '../../asset/dichvu/camera/anh_6.jpg'
+import anh_7 from '../../asset/dichvu/camera/anh_7.jpg'
+import anh_8 from '../../asset/dichvu/camera/anh_8.jpg'
 
 import dit_con_trung from '../../asset/Icon/Group_119.svg';
 
@@ -36,22 +35,22 @@ function BaoVeCamera() {
         </div>
 
         <div className="vscn-11"  style={{display: 'table-cell'}}>
-          <img src={vscn_11} className="w-100"/>
+          <img src={anh_1} className="w-100"/>
         </div>
 
       </div>
 
       <div className="clearfix">
         <div className="float-left" style={{width: '48%'}}>
-          <img src={vscn_2} className="w-100 my-1"/>
-          <img src={vscn_3} className="w-100 my-1"/>
-          <img src={vscn_4} className="w-100 my-1"/>
-          <img src={vscn_5} className="w-100 my-1"/>
+          <img src={anh_2} className="w-100 my-1"/>
+          <img src={anh_3} className="w-100 my-1"/>
+          <img src={anh_4} className="w-100 my-1"/>
+          <img src={anh_5} className="w-100 my-1"/>
         </div>
         <div className="float-right" style={{width: '51.55%'}}>
-          <img src={vscn_6} className="w-100 my-1"/>
-          <img src={vscn_7} className="w-100 my-1"/>
-          <img src={vscn_8} className="w-100 my-1"/>
+          <img src={anh_6} className="w-100 my-1"/>
+          <img src={anh_7} className="w-100 my-1"/>
+          <img src={anh_8} className="w-100 my-1"/>
         </div>
       </div>
     </div>

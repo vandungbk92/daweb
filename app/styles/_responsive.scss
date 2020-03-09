@@ -48,8 +48,21 @@
   .menu-header-top {
     height: 124px !important;
   }
+  .company-header{
+    font-size: 24px !important;
+  }
   .home-slider {
     margin-top: -125px;
+    .ic-home-slider{
+      width: 170px !important;
+      height: 170px !important;
+      img{
+        width: 80px !important;
+      }
+    }
+    .tl-slick-custom-label{
+      font-size: 16px !important;
+    }
   }
   .menu-header {
     font-size: 16px;
@@ -124,9 +137,15 @@
       }
 
       .product__bottom{
-        height: 249px;
+        height: 600px;
         .product__bottom__content{
           width: 100%;
+          .logo-bmk-txt{
+            font-size: 28px;
+          }
+          .logo-bmk{
+            width: 160px;
+          }
           .content__item{
             .content__item__number{
               font-size: 68px;
@@ -135,6 +154,20 @@
               font-size: 18px;
             }
           }
+        }
+      }
+
+    }
+
+    .home-page-quan-ly{
+      .block-1{
+        img{
+          width: 250px;
+        }
+      }
+      .block-2{
+        img{
+          width: 320px;
         }
       }
 
@@ -158,6 +191,10 @@
     }
 
     .dich-vu-chi-tiet{
+      .img-tieu-chi-dich-vu{
+        width: 61.4819% !important;
+      }
+
       .block-1{
         .img-leo-treo {
           width: 548px !important;

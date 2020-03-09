@@ -44,6 +44,12 @@ function VeSinhCongNghiepMobile() {
     dotsClass: 'slick-dots slick-thumb',
   };
 
+  let history = useHistory();
+
+  function handleClick(link) {
+    history.push(link);
+  }
+
   return (
     <div className="ve-sinh-cong-nghiep-mobile">
       <div className="mb-vscn-slide">
@@ -52,23 +58,23 @@ function VeSinhCongNghiepMobile() {
             <span className="sl-title active">VỆ SINH CÔNG NGHIỆP</span>
           </div>
           <div className="sl-content-custom">
-            <span className="sl-title">QUẢN LÝ VẬN HÀNH</span>
+            <span className="sl-title" onClick={() => handleClick('/quan-ly-van-hanh')}>QUẢN LÝ VẬN HÀNH</span>
           </div>
 
           <div className="sl-content-custom">
-            <span className="sl-title">BẢO VỆ, CAMERA AN NINH</span>
+            <span className="sl-title" onClick={() => handleClick('/bao-ve-camera')}>BẢO VỆ, CAMERA AN NINH</span>
           </div>
           <div className="sl-content-custom">
-            <span className="sl-title">DIỆT CÔNG TRÙNG</span>
+            <span className="sl-title"  onClick={() => handleClick('/diet-con-trung')}>DIỆT CÔNG TRÙNG</span>
           </div>
         </Slider>
       </div>
 
       <div className="mb-block-1">
         <div className="mb-block-1-title">
-          <PrevArrow/>
+          <PrevArrow  onClick={() => handleClick('diet-con-trung')}/>
           <div className="title">Vệ sinh công nghiệp</div>
-          <NextArrow/>
+          <NextArrow  onClick={() => handleClick('/quan-ly-van-hanh')}/>
         </div>
         <div className="mb-block-1-content">
           <div className="vscn-detail col-sm-12"><br/>Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong
@@ -85,7 +91,7 @@ function VeSinhCongNghiepMobile() {
         </div>
       </div>
 
-      <div className="mb-block-2">
+      <div className="mb-block-2 mt-2">
         <div className="mb-bl-2-img mb-2">
           <img src={vscn_1} className='img-content mr-2'/>
           <img src={vscn_2} className='img-content'/>

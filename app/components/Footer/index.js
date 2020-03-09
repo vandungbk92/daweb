@@ -19,8 +19,8 @@ function Footer() {
           <div>
             <img src={logo_blue} alt="Snow" className="logo-bmv"/>
 
-            <div className='company-name-vi'>{'CÔNG TY CỔ PHẦN QUẢN LÝ TÒA NHÀ VIỆT NAM'}</div>
-            <div className='company-name-en'>{'Vietnam Building Management.,JSC'}</div>
+            <div className='company-name-vi'>{'CÔNG TY CỔ PHẦN QUẢN LÝ VÀ VẬN HÀNH TÒA NHÀ VIỆT NAM'}</div>
+            <div className='company-name-en'>{'Vietnam Building Management and Operation ., JSC'}</div>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Footer() {
       <section className='section-top-mobile'>
         <div className="block block-1">
           <img src={logo_blue}/>
-          <div className="company-name-vi">CÔNG TY CỔ PHẦN QUẢN LÝ TÒA NHÀ VIỆT NAM</div>
+          <div className="company-name-vi">CÔNG TY CỔ PHẦN QUẢN LÝ VÀ VẬN HÀNH TÒA NHÀ VIỆT NAM</div>
           <div className="company-name-en">Vietnam Building Management.,JSC</div>
         </div>
         <div className="block block-2">

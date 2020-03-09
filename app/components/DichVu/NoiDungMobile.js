@@ -45,10 +45,10 @@ function NoiDungMobile() {
         <div className="dv-content">Để duy trì vệ sinh, chăm sóc sàn nhà, duy trì mỹ quan bên trong tòa nhà thì có công
           việc tiến hành hàng ngày và có công việc tiến hành định kỳ.
         </div>
-        <div className="dv-readmore" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
+        <div className="dv-readmore" onClick={() => handleClick('/quan-ly-van-hanh')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
       </div>
 
-      <div className="block-2" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>
+      <div className="block-2" onClick={() => handleClick('/quan-ly-van-hanh')}>
         <img src={dv_2} className="img-1"/>
         <div className="dv-title">Quản lý vận hành</div>
       </div>
@@ -57,11 +57,11 @@ function NoiDungMobile() {
         <div className="dv-content">Chúng tôi luôn nỗ lực phát huy công năng tối đa thông qua việc quản lý vận hành
           chính xác, ổn định các thiết bị phòng cháy, chữa cháy, thiết bị điều hòa.
         </div>
-        <div className="dv-readmore" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
+        <div className="dv-readmore" onClick={() => handleClick('/quan-ly-van-hanh')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
       </div>
 
 
-      <div className="block-2" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>
+      <div className="block-2" onClick={() => handleClick('/bao-ve-camera')}>
         <img src={dv_3} className="img-1"/>
         <div className="dv-title dv-title-3">Bảo vệ, camera an ninh</div>
       </div>
@@ -70,10 +70,10 @@ function NoiDungMobile() {
         <div className="dv-content">Chúng tôi luôn luôn thực hiện nghiêm khắc để bảo toàn tài sản thông qua việc giám
           sát bên trong, bên ngoài tòa nhà bằng hệ thống camera an ninh.
         </div>
-        <div className="dv-readmore" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
+        <div className="dv-readmore" onClick={() => handleClick('/bao-ve-camera')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
       </div>
 
-      <div className="block-2" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>
+      <div className="block-2" onClick={() => handleClick('/diet-con-trung')}>
         <img src={dv_4} className="img-1"/>
         <div className="dv-title dv-title-4">Diệt côn trùng</div>
       </div>
@@ -82,12 +82,9 @@ function NoiDungMobile() {
         <div className="dv-content">Kiểm soát phòng ngừa côn trùng là một thành phần thiết yếu của quá trình đang bảo
           trì tài sản, và một điều không may là thường xuyên bị bỏ qua.
         </div>
-        <div className="dv-readmore" onClick={() => handleClick('/ve-sinh-cong-nghiep')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
+        <div className="dv-readmore" onClick={() => handleClick('/diet-con-trung')}>TÌM HIỂU THÊM <img src={ic_arrow_back}/></div>
       </div>
-
     </div>
-
-
   );
 }
 

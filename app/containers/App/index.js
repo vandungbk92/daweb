@@ -24,6 +24,7 @@ export default function App() {
       <Header/>
       <Switch>
         <Route exact path="/" component={HomePage}/>
+        <Route exact path="/index.html" component={HomePage}/>
         <Route path="/dich-vu" component={DichVuPage}/>
         <Route path="/ve-sinh-cong-nghiep" component={VeSinhCongNghiepPage}/>
         <Route path="/diet-con-trung" component={DietConTrungPage}/>

@@ -170,20 +170,25 @@ function Header() {
     <div className="header">
       <div className="container-custom header-large">
         <div className="row mx-0">
-          <ul className="nav align-items-center w-100 justify-content-end" style={{ height: '50px' }}>
-            <li className="nav-item header__item">
-              <img className='header__icon' src={IC_MAIL} alt=""/>
-              <span className='header__text'>bm-v@gmail.com</span>
+          <ul className="nav align-items-center w-100 justify-content-between" style={{ height: '50px' }}>
+            <li className="company-header">
+              CÔNG TY CỔ PHẦN QUẢN LÝ VÀ VẬN HÀNH TÒA NHÀ VIỆT NAM
             </li>
-            <li className="nav-item header__item" style={{ paddingRight: '85px' }}>
-              <img className='header__icon' src={IC_PHONE} alt=""/>
-              <span className='header__text'>+84 24 666666 84</span>
-            </li>
-            <li className="nav-item">
-              <img src={FLAG_VN} alt="FLAG_VN" className="header__flag"/>
-              <img src={FLAG_EN} alt="FLAG_EN" className="header__flag"/>
-              <img src={FLAG_JAPAN} alt="FLAG_JAPAN" className="header__flag"/>
-            </li>
+            <ul className="d-flex">
+              <li className="nav-item header__item">
+                <img className='header__icon' src={IC_MAIL} alt=""/>
+                <span className='header__text'>bm-v@gmail.com</span>
+              </li>
+              <li className="nav-item header__item" style={{ paddingRight: '85px' }}>
+                <img className='header__icon' src={IC_PHONE} alt=""/>
+                <span className='header__text'>+84 24 666666 84</span>
+              </li>
+              <li className="nav-item">
+                <img src={FLAG_VN} alt="FLAG_VN" className="header__flag"/>
+                <img src={FLAG_EN} alt="FLAG_EN" className="header__flag"/>
+                <img src={FLAG_JAPAN} alt="FLAG_JAPAN" className="header__flag"/>
+              </li>
+            </ul>
           </ul>
           {!isNews && !isPhotoLibrary && navMenuPc}
         </div>

@@ -10,6 +10,15 @@ import vscn_6 from '../../asset/Image/vscn-6.png';
 import vscn_7 from '../../asset/Image/vscn-7.png';
 import vscn_8 from '../../asset/Image/vscn-8.png';
 
+import anh_1 from '../../asset/dichvu/quanly/anh1.jpg'
+import anh_2 from '../../asset/dichvu/quanly/anh2.jpg'
+import anh_3 from '../../asset/dichvu/quanly/anh3.jpg'
+import anh_4 from '../../asset/dichvu/quanly/anh4.jpg'
+import anh_5 from '../../asset/dichvu/quanly/anh5.jpg'
+import anh_6 from '../../asset/dichvu/quanly/anh6.jpg'
+import anh_7 from '../../asset/dichvu/quanly/anh7.jpg'
+import anh_8 from '../../asset/dichvu/quanly/anh8.jpg'
+
 import dit_con_trung from '../../asset/Icon/quan_ly_van_hanh.svg';
 
 function QuanLyVanHanh() {
@@ -36,22 +45,22 @@ function QuanLyVanHanh() {
         </div>
 
         <div className="vscn-11"  style={{display: 'table-cell'}}>
-          <img src={vscn_11} className="w-100"/>
+          <img src={anh_1} className="w-100"/>
         </div>
 
       </div>
 
       <div className="clearfix">
         <div className="float-left" style={{width: '48%'}}>
-          <img src={vscn_2} className="w-100 my-1"/>
-          <img src={vscn_3} className="w-100 my-1"/>
-          <img src={vscn_4} className="w-100 my-1"/>
-          <img src={vscn_5} className="w-100 my-1"/>
+          <img src={anh_2} className="w-100 my-1"/>
+          <img src={anh_3} className="w-100 my-1"/>
+          <img src={anh_4} className="w-100 my-1"/>
+          <img src={anh_5} className="w-100 my-1"/>
         </div>
         <div className="float-right" style={{width: '51.55%'}}>
-          <img src={vscn_6} className="w-100 my-1"/>
-          <img src={vscn_7} className="w-100 my-1"/>
-          <img src={vscn_8} className="w-100 my-1"/>
+          <img src={anh_6} className="w-100 my-1"/>
+          <img src={anh_7} className="w-100 my-1"/>
+          <img src={anh_8} className="w-100 my-1"/>
         </div>
       </div>
     </div>

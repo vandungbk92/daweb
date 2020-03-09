@@ -147,12 +147,15 @@ body, html {
 }
 
 .tl-slick-custom-label {
-  background: #00000080;
+  background: #FFFFFF;
   border: 1px solid #FFFFFF80;
   padding: 5px 10px;
   text-align: center;
-  color: #FFFFFF;
+  color: #222222;
   text-transform: uppercase;
+  border: 1px solid #00000080;
+  font-size: 14px;
+  font-family: Montserrat-Bold;
 }
 
 .menu-header {
@@ -184,6 +187,18 @@ body, html {
   cursor: pointer;
 }
 
+.demo{
+  display: flex;
+}
+
+.content-center{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999999999999999;
+}
+
 .menu-header-last {
   margin-right: 0;
 }
@@ -200,7 +215,7 @@ body, html {
 }
 
 .sl-content-header {
-  font-size: 56px;
+  font-size: 40px;
   letter-spacing: 0;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -302,4 +317,36 @@ body, html {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #FFFFFF;
+}
+
+.quan-ly-name{
+  font-size: 24px;
+  line-height: 60px;
+  color: #222222;
+  text-align: center;
+}
+
+.quan-ly-chuc-vu{
+  font-size: 16px;
+  line-height: 60px;
+  color: #CE001B;
+  text-align: center;
+  font-family: Montserrat-Bold;
+}
+
+.quan-ly-hr{
+  width: 80%;
+}
+.home-page-quan-ly{
+  //margin-top: -60px;
+  .block-1{
+    img{
+      width: 200px;
+    }
+  }
+  .block-2{
+    img{
+      width: 260px;
+    }
+  }
 }

@@ -1,10 +1,15 @@
 import React from 'react';
-
+import { useHistory } from 'react-router-dom';
 export function TinTuc() {
+  let history = useHistory();
+
+  function handleClick(link) {
+    history.push(link);
+  }
   return (
     <div className="home-page-tin-tuc">
       <div className="">
-        <div style={{ textAlign: 'center', margin: '30px' }} className="w-100">
+        <div style={{ textAlign: 'center', marginBottom: '40px' }} className="w-100">
         <span
           style={{
             color: '#FFFFFF',
@@ -27,7 +32,7 @@ export function TinTuc() {
               Gặp gỡ với Giám Đốc điều hành của THE GENERAL <br/>DEPT. OF INT'L COOPERATION
             </td>
             <td className="btn-continous">
-              <span className="btn-read-more">ĐỌC TIẾP</span>
+              <span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span>
             </td>
           </tr>
           <tr className="tr-css">
@@ -38,7 +43,7 @@ export function TinTuc() {
               Các công ty quản lý tòa nhà buộc phải cải thiện
             </td>
             <td className="btn-continous">
-              <span className="btn-read-more">ĐỌC TIẾP</span>
+              <span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span>
             </td>
           </tr>
           <tr className="tr-css">
@@ -49,7 +54,7 @@ export function TinTuc() {
               THAM QUAN VÀ LÀM VIỆC TẠI DOANH NGHIỆP NHẬT BẢN
             </td>
             <td className="btn-continous">
-              <span className="btn-read-more">ĐỌC TIẾP</span>
+              <span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span>
             </td>
           </tr>
           <tr className="tr-css">
@@ -60,7 +65,7 @@ export function TinTuc() {
               GẶP GỠ VỚI CÔNG TY AN NINH VIỆT NAM
             </td>
             <td className="btn-continous">
-              <span className="btn-read-more">ĐỌC TIẾP</span>
+              <span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span>
             </td>
           </tr>
           </tbody>

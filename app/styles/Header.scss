@@ -2,6 +2,14 @@
   .header-mobile {
     display: none;
   }
+  .company-header{
+    font: {
+      size: 20px;
+      family: UTM-Bebas;
+    };
+    color: #ffffff;
+    //letter-spacing: 5px;
+  }
 
   .header-large {
     display: block;

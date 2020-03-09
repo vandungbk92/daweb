@@ -1,7 +1,7 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import DietConTrung from '../../components/DichVu/DietConTrung';
-import VeSinhCongNghiepMobile from '../../components/DichVu/VeSinhCongNghiepMobile';
+import DCTMobile from '../../components/DichVu/DCTMobile';
 import '../VeSinhCongNghiepPage/Vscn.scss';
 import './dietcontrung.scss'
 
@@ -32,7 +32,7 @@ export default function DietConTrungPage() {
 
       <DietConTrung/>
     </div>
-    <VeSinhCongNghiepMobile/>
+    <DCTMobile/>
   </div>;
 
 }

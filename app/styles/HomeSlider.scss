@@ -1,14 +1,42 @@
 .home-slider{
   width: 100%;
-  margin: -110px 0 125px 0;
+  margin: -110px 0 170px 0;
   z-index: 1;
   position: relative;
+  img{
+    position: relative;
+  }
+  .homepage-bg-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.45;
+    z-index: 0;
+  }
+  .ic-home-slider{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    background: #E9E9E9;
+    img{
+      width: 60px;
+    }
+  }
+
+  .slick-dots{
+    bottom: -125px;
+  }
 }
 
 @media (max-width: 1365px) {
-  .home-slider{
-    margin: 0 !important;
-  }
+
 }
 
 //style={{ width: '100%', marginBottom: '300px', position: 'relative', zIndex: '1', marginTop: '-110px' }}

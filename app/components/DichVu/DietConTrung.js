@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import vscn_1 from '../../asset/Image/vscn-1.png';
 import vscn_11 from '../../asset/Image/vscn_11.png';
 import vscn_2 from '../../asset/Image/vscn-2.png';
 import vscn_3 from '../../asset/Image/vscn-3.png';

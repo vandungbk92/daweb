@@ -5,7 +5,14 @@ import ve_chung_toi_2 from '../../asset/Image/ve-chung-toi-2.png';
 import ve_chung_toi_3 from '../../asset/Image/ve_chung_toi_3.jpg';
 import ve_chung_toi_4 from '../../asset/Image/ve_chung_toi_4.jpg';
 import ve_chung_toi_5 from '../../asset/Image/ve_chung_toi_5.jpg';
-import ic_cleaner from '../../asset/Icon/ic_cleaner.svg';
+import anh_1 from '../../asset/vechungtoi/anh_1.png';
+import anh_2 from '../../asset/vechungtoi/anh_2.png';
+import anh_3 from '../../asset/vechungtoi/anh_3.png';
+import anh_4 from '../../asset/vechungtoi/anh_4.png';
+import anh_5 from '../../asset/vechungtoi/anh_5.png';
+import anh_6 from '../../asset/vechungtoi/anh_6.png';
+import anh_7 from '../../asset/vechungtoi/anh_7.png';
+import anh_8 from '../../asset/vechungtoi/anh_8.png';
 
 
 function NoiDung() {
@@ -105,7 +112,95 @@ function NoiDung() {
         </div>
       </div>
 
-      <div className="block-4">
+      <div className="block-5">
+        <div className="bl-5-title">CÁC THỂ MẠNH CỦA CHÚNG TÔI</div>
+        <div className="block-5-content">
+          <img src={anh_1}/>
+          <div>Có trung tâm đào tạo bồi dưỡng tay nghề</div>
+          <img src={anh_2}/>
+        </div>
+
+        <div className="block-5-content">
+          <div>Trang thiết bị hiện đại, công nghệ tiên tiến</div>
+          <img src={anh_3}/>
+          <div>Nhân công được đào tạo chuyên nghiệp</div>
+        </div>
+      </div>
+
+      <div className="block-6">
+        <div className="bl-6-content">
+          <img src={anh_4}/>
+          <div>
+            <div>NHÂN CÔNG ĐƯỢC ĐÀO TẠO CHUYÊN NGHIỆP</div>
+            <div>
+              <div>Nhân sự được đào tạo bài bản tại các trung tâm</div>
+              <div>Nhân sự được đào tạo bài bản tại các trung tâm</div>
+              <div>Nhân sự được đào tạo bài bản tại các trung tâm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="block-7">
+        <div className="bl-7-content">
+          <div>
+            <div>TRANG THIẾT BỊ HIỆN ĐẠI</div>
+            <div>
+              <div>Được nhập khẩu trực tiếp từ Italia, Nhật Bản</div>
+              <div>Hiệu suất cao</div>
+              <div>Tháo lắp dễ dàng – Tiết kiệm thời gian</div>
+            </div>
+          </div>
+          <img src={anh_5}/>
+
+        </div>
+      </div>
+
+      <div className="block-8">
+        <div className="bl-8-content">
+          <img src={anh_6}/>
+          <div>
+            <div>CÔNG NGHỆ TIÊN TIẾN</div>
+            <div>
+              <div>Thân thiện với môi trường</div>
+              <div>An toàn với sức khỏe con người</div>
+              <div>Tính khử trùng, diệt khuẩn cao</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="block-9">
+        <div className="bl-9-title">CÁC THỂ MẠNH CỦA CHÚNG TÔI</div>
+        <img src={anh_7}/>
+      </div>
+
+      <div className="block-10">
+        <div className="bl-10-content">
+          <img src={anh_8}/>
+          <div>
+            <div>GIÁ CẢ CẠNH TRANH</div>
+            <div>
+              Dưới sự kết hợp của các yếu tố trên (con người, kỹ thuật, cách setup dự án ….) chúng tôi mong muốn mang lại cho khách hàng sự hài lòng với chi phí hợp lý nhất.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="block-11">
+        <div className="bl-11">
+          <div>PHƯƠNG PHÁP TÍNH TOÁN VÀ QUẢN LÝ</div>
+          <div className="bl-11-content">
+            <div>Lương xứng đáng theo năng lực</div>
+            <div>Được tham gia BHXH</div>
+            <div>Các phụ cấp (chuyên cần, đi lại, nhà ở…)</div>
+            <div>Thưởng lễ tết, tháng lương 13 theo quy định của nhà nước</div>
+            <div>Người lao động gắn bó lâu dài với công ty</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="block-4 bg-white">
         <div className="block-4-content">
           <div className="bl-4-title mb-3">Sứ mệnh của chúng tôi</div>
           <div className="bl-4-content">Chúng tôi theo đuổi mục tiêu hoàn thiện Phần mềm (con người) và Phần cứng (Thiết
@@ -117,6 +212,7 @@ function NoiDung() {
           </div>
         </div>
       </div>
+
     </div>
 
 

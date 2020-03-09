@@ -1,7 +1,7 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import BaoVeCamera from '../../components/DichVu/BaoVeCamera';
-import VeSinhCongNghiepMobile from '../../components/DichVu/VeSinhCongNghiepMobile';
+import CameraMobile from '../../components/DichVu/CameraMobile';
 import './baovecamera.scss'
 import '../VeSinhCongNghiepPage/Vscn.scss';
 
@@ -33,7 +33,7 @@ export default function BaoVeCameraPage() {
 
       <BaoVeCamera/>
     </div>
-    <VeSinhCongNghiepMobile/>
+    <CameraMobile/>
   </div>;
 
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import QuanLyVanHanh from '../../components/DichVu/QuanLyVanHanh';
 import VeSinhCongNghiepMobile from '../../components/DichVu/VeSinhCongNghiepMobile';
+import QLVHMobile from '../../components/DichVu/QLVHMobile';
 import './quanlyvanhanh.scss'
 import '../VeSinhCongNghiepPage/Vscn.scss';
 
@@ -33,7 +34,7 @@ export default function QuanLyVanHanhPage() {
 
       <QuanLyVanHanh/>
     </div>
-    <VeSinhCongNghiepMobile/>
+    <QLVHMobile/>
   </div>;
 
 }

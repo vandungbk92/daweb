@@ -14,6 +14,7 @@ import GROUP_85 from '../../asset/Image/Group85.svg';
 import van_hanh from '../../asset/Image/dich_vu_33.jpg';
 import dit_con_trung_png from '../../asset/Image/dich_vu_44.jpg';
 import icon_arrow_right from '../../asset/Image/icon_arrow_right.jpg';
+import dich_vu_upt from '../../asset/quanly/dich_vu_upt.png';
 
 
 function NoiDung() {
@@ -25,7 +26,7 @@ function NoiDung() {
   }
 
   return (
-    <div className="dich-vu-chi-tiet">
+    <div className="dich-vu-chi-tiet bg-white">
       <div className="dich-vu-block block-1 clearfix">
         <img src={leo_treo} className="img-leo-treo"/>
         <div className="hinh-vuong"></div>
@@ -58,7 +59,7 @@ function NoiDung() {
         <img src={Group_119} className="img-opacity-clear img-bao-ve-1"/>
         <div className="title-1">Bảo vệ, camera an ninh</div>
         <img src={Group86} className="img-opacity-clear-1 img-bao-ve"/>
-        <div className="title-2 bao-ve-title-2">Kiểm soát phòng ngừa côn trùng là một thành phần thiết yếu của quá trình đang bảo trì tài sản, và một đều không may là thường xuyên bị bỏ qua.</div>
+        <div className="title-2 bao-ve-title-2">Chúng tôi luôn luôn thực hiện nghiêm khắc để bảo toàn tài sản thông qua việc giám sát bên trong, bên ngoài tòa nhà bằng hệ thống camera an ninh.</div>
         <div className="title-3 bao-ve-title-3"  onClick={() => handleClick('/bao-ve-camera')}>Tìm hiểu thêm <img src={icon_arrow_right}/></div>
       </div>
 
@@ -70,6 +71,14 @@ function NoiDung() {
         <div className="title-3 dvc-title-3"  onClick={() => handleClick('/diet-con-trung')}>Tìm hiểu thêm <img src={icon_arrow_right}/></div>
         <img src={dit_con_trung_png} className="img-quan-ly img-diet-con-trung"/>
         <div className="hinh-vuong dvc-hinh-vuong"></div>
+      </div>
+
+      <div className="">
+
+        <div className="tieu-chi-dich-vu">TIÊU CHÍ DỊCH VỤ</div>
+        <div className="text-center">
+          <img src={dich_vu_upt} alt="tieu-chi-dich-vu" className="img-tieu-chi-dich-vu"/>
+        </div>
       </div>
     </div>
   );

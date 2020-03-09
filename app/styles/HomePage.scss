@@ -176,17 +176,27 @@
 
     .product__bottom {
       width: 100%;
-      background: #CE001B 0 0 no-repeat padding-box;
-      height: 178px;
+      //background: #CE001B 0 0 no-repeat padding-box;
+      height: 500px;
       display: flex;
+      background-image: url('../asset/Icon/video.gif');
+      background-size: cover;
+      background-position: center;
+
 
       .product__bottom__content {
         margin: auto;
         //background-color: #1D86E2;
-        height: 120px;
+        //height: 120px;
         width: 1200px;
-        color: #FFFFFF;
-
+        text-align: center;
+        .logo-bmk-txt{
+          color: #222222;
+          font-size: 24px;
+        }
+        .logo-bmk{
+          width: 140px;
+        }
         .content__item {
           width: calc(100% / 5);
           height: 100%;
@@ -203,11 +213,13 @@
             font-size: 42px;
             line-height: 50px;
             margin-bottom: 16px;
+            color: #CE001B;
           }
 
           .content__item__text {
             font-family: Montserrat-Medium, sans-serif;
             font-size: 12px;
+            color: #000000;
           }
         }
 
@@ -239,7 +251,7 @@
           left: 8.695%;
           align-items: unset;
           .sl-content-header{
-            width: 216px;
+            width: 100%;
             font-size: 42px;
           }
           .sl-content-content{
@@ -258,6 +270,7 @@
           text-transform: uppercase;
           font-size: 10px;
           font-family: Montserrat-Bold;
+          letter-spacing: 1.6px;
         }
       }
 
@@ -436,13 +449,20 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .homepage-container{
     .homepage-container-mobile{
       .home-slider{
         margin: 0 0 200px 0 !important;
         .slick-dots {
-          bottom: -170px !important;
+          bottom: -110px !important;
+        }
+        .ic-home-slider{
+          width: 120px !important;
+          height: 120px !important;
+          img{
+            width: 80px;
+          }
         }
       }
     }
@@ -450,13 +470,48 @@
 
 }
 
-@media (max-width: 415px) {
+@media (max-width: 769px) {
   .homepage-container{
     .homepage-container-mobile{
       .home-slider{
+        margin: 0 0 200px 0 !important;
+        .slick-dots {
+          bottom: -110px !important;
+        }
+        .ic-home-slider{
+          width: 100px !important;
+          height: 100px !important;
+          img{
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media (max-width: 415px) {
+  .homepage-container{
+    .homepage-container-mobile{
+      /*.home-slider{
         margin: 0 0 150px 0 !important;
         .slick-dots {
           bottom: -125px !important;
+        }
+      }*/
+
+      .home-slider{
+        margin: 0 0 150px 0 !important;
+        .ic-home-slider{
+          width: 80px !important;
+          height: 80px !important;
+          img{
+            width: 40px !important;
+          }
         }
       }
     }

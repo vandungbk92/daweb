@@ -114,21 +114,21 @@ export function HomeMobile() {
           <div className="my-3">
             <div className="time mt-5">Thursday, 14:09 Date 14/12/2017</div>
             <div className="title my-2">Gặp gỡ với Giám Đốc điều hành của THE GENERAL DEPT. OF INT'L COOPERATION</div>
-            <div className="my-3"><span className="btn-read-more">ĐỌC TIẾP</span></div>
+            <div className="my-3"><span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span></div>
             <hr />
           </div>
 
           <div className="my-3">
             <div className="time mt-5">Thursday, 14:09 Date 14/12/2017</div>
             <div className="title my-2">Gặp gỡ với Giám Đốc điều hành của THE GENERAL DEPT. OF INT'L COOPERATION</div>
-            <div className="my-3"><span className="btn-read-more">ĐỌC TIẾP</span></div>
+            <div className="my-3"><span className="btn-read-more" onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span></div>
             <hr />
           </div>
 
           <div className="my-3">
             <div className="time mt-5">Thursday, 14:09 Date 14/12/2017</div>
             <div className="title my-2">Gặp gỡ với Giám Đốc điều hành của THE GENERAL DEPT. OF INT'L COOPERATION</div>
-            <div className="my-3"><span className="btn-read-more">ĐỌC TIẾP</span></div>
+            <div className="my-3"><span className="btn-read-more"  onClick={() => handleClick('/chi-tiet-tin-tuc')}>ĐỌC TIẾP</span></div>
           </div>
           <br/>
         </div>

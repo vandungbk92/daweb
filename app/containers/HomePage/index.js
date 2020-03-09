@@ -16,6 +16,7 @@ import {
 import TinTuc from './TinTuc';
 import NoiDungChinh from './NoiDungChinh';
 import HomeSlider from './HomeSlider';
+import QuanLy from './QuanLy';
 import HomeSliderMobile from './HomeSliderMobile';
 import HomeMobile from './HomeMobile';
 import { loadRepos } from '../App/actions';
@@ -58,6 +59,7 @@ export function HomePage({
       <div className="homepage-container-large">
         <HomeSlider/>
         <NoiDungChinh/>
+        <QuanLy />
         <TinTuc/>
       </div>
       <div className="homepage-container-mobile">
